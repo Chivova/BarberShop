@@ -269,6 +269,13 @@ summary {
   display: list-item;
 }
 
+.services-prices,
+.services-prices2 {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 body {
   background-color: #ffffff;
   color: #555555;
@@ -291,5 +298,107 @@ body.modal-open {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.section-subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #303030;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #303030;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.section-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.section-paragraph {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.page-hero {
+  background-image: url("../images/mobile/slider.jpg");
+}
+
+.hero-subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: rgba(157, 164, 189, 0.6);
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.hero-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #9da4bd;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.section-services {
+  background-image: url("../images/mobile/price.jpg");
+}
+
+.section-services-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.services-prices-item,
+.services-prices2-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.services-text,
+.prices-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #9da4bd;
+  font-size: 14px;
+  line-height: 2.14;
+}
+
+.border-bottom {
+  width: 100%;
+  border-bottom: 1px solid #9da4bd;
 }
 /*# sourceMappingURL=main.css.map */

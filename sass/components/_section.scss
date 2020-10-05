@@ -1,0 +1,36 @@
+.section {
+  @include PaddingTopBottom(84px, 84px);
+}
+
+.section-subtitle {
+  @include MarginTopBottom(0, 0);
+
+  color: $title-text-color;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+}
+
+.section-title {
+  @include MarginTopBottom(0, 0);
+
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.section-text {
+  @include MarginTopBottom(0, 0);
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.section-paragraph {
+  @include MarginTopBottom(0, 0);
+
+  font-size: 14px;
+  line-height: 1.9;
+}
