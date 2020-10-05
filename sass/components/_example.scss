@@ -1,0 +1,7 @@
+.example-list {
+  @extend %list;
+}
+
+.example-item {
+  @include MarginTopBottom(0, 30px);
+}

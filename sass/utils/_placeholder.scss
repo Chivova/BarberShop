@@ -3,3 +3,14 @@
   margin: 0;
   list-style: none;
 }
+
+%social-Link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  background-color: $primary-bg-color;
+}

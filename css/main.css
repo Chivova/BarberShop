@@ -270,23 +270,43 @@ summary {
 }
 
 .services-prices,
-.services-prices2 {
+.services-prices2, .features-list, .our-team-list, .social-list, .example-list {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 
 body {
   background-color: #ffffff;
   color: #555555;
   font-family: OpenSans, sans-serif;
-  font-size: 18px;
-  line-height: 1.7;
-  letter-spacing: 0.02em;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
 }
 
 body.modal-open {
   overflow: hidden;
+}
+
+img {
+  display: block;
 }
 
 .visually-hidden {
@@ -309,9 +329,6 @@ body.modal-open {
   margin-top: 0;
   margin-bottom: 0;
   color: #303030;
-  font-size: 11px;
-  line-height: 1.4;
-  letter-spacing: 0.1em;
 }
 
 .section-title {
@@ -319,23 +336,9 @@ body.modal-open {
   margin-bottom: 0;
   color: #303030;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 42px;
   line-height: 1.2;
   letter-spacing: 0.05em;
-}
-
-.section-text {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.section-paragraph {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 14px;
-  line-height: 1.9;
 }
 
 .page-hero {
@@ -348,7 +351,6 @@ body.modal-open {
   color: rgba(157, 164, 189, 0.6);
   font-size: 11px;
   line-height: 1.4;
-  letter-spacing: 0.1em;
 }
 
 .hero-title {
@@ -367,10 +369,37 @@ body.modal-open {
   color: #9da4bd;
   font-size: 16px;
   line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+.aboutus-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #303030;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.aboutus-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+.aboutus-paragraph {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.9;
+  letter-spacing: 0.02em;
 }
 
 .section-services {
-  background-image: url("../images/mobile/price.jpg");
+  background-image: lin url("../images/mobile/price.jpg");
 }
 
 .section-services-title {
@@ -400,5 +429,73 @@ body.modal-open {
 .border-bottom {
   width: 100%;
   border-bottom: 1px solid #9da4bd;
+}
+
+.features-paraghraph {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.features-number {
+  display: inline-block;
+  color: #303030;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.features-number-sup {
+  top: -20px;
+  color: #ff6c00;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.features-subtext {
+  color: #303030;
+}
+
+.our-team-section {
+  background-color: #f7f7f7;
+}
+
+.our-team-item {
+  text-align: center;
+}
+
+.name-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #303030;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+.taem-position {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #ff6c00;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+.social-link:hover, .social-link:focus {
+  fill: #ff6c00;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.example-item {
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */

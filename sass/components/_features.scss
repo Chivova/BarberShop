@@ -1,0 +1,30 @@
+.features-paraghraph {
+  @include MarginTopBottom(0, 0);
+
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.features-list {
+  @extend %list;
+}
+
+.features-number {
+  display: inline-block;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+.features-number-sup {
+  top: -20px;
+  color: $accent-color;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.features-subtext {
+  color: $title-text-color;
+}

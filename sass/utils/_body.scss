@@ -3,11 +3,15 @@ body {
   color: $primary-text-color;
 
   font-family: OpenSans, sans-serif;
-  font-size: 18px;
-  line-height: 1.7;
-  letter-spacing: 0.02em;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
 
   &.modal-open {
     overflow: hidden;
   }
+}
+
+img {
+  display: block;
 }
