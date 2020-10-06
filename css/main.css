@@ -270,10 +270,16 @@ summary {
 }
 
 .services-prices,
-.services-prices2, .features-list, .our-team-list, .social-list, .example-list {
+.services-prices2, .features-list, .our-team-list, .social-list, .example-list, .address-list, .social-link-list {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.contact-link, .link {
+  display: block;
+  text-decoration: none;
+  color: #303030;
 }
 
 .social-link {
@@ -523,16 +529,110 @@ img {
   letter-spacing: 0.05em;
 }
 
+.form-group {
+  margin-top: 0;
+  margin-bottom: 44px;
+}
+
 .form-field {
   border: none;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
   background-color: transparent;
   color: rgba(157, 164, 189, 0.4);
   font-size: 11px;
   line-height: 1.4;
+  letter-spacing: 0.01em;
 }
 
-.form-label {
-  border-top: none;
+.form-textarea {
+  resize: none;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  background-color: transparent;
+  color: rgba(157, 164, 189, 0.4);
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+
+.contact-link {
+  color: #9da4bd;
+}
+
+.footer-address {
+  background-image: url("../images/mobile/footer.jpg");
+  padding: 84px 31px;
+  text-align: center;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.address-list {
+  margin-top: 0;
+  margin-bottom: 44px;
+}
+
+.address-item:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.work-time-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.work-time {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  color: #9da4bd;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 44px 31px;
+  background-color: #f7f7f7;
+}
+
+.copyright {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  color: #9da4bd;
+}
+
+.social-link-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-link-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.border-center {
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */

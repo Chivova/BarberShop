@@ -4,6 +4,12 @@
   list-style: none;
 }
 
+%link {
+  display: block;
+  text-decoration: none;
+  color: $title-text-color;
+}
+
 %social-Link {
   display: flex;
   width: 44px;
