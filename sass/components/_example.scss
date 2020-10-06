@@ -2,6 +2,6 @@
   @extend %list;
 }
 
-.example-item {
+.example-item:not(:last-child) {
   @include MarginTopBottom(0, 30px);
 }

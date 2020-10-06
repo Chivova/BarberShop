@@ -25,5 +25,16 @@
 <symbol id="footer-line" viewBox="0 0 1920 32">
 <path fill="#9da4bd" style="fill: var(--color2, #9da4bd)" opacity="0.4" d="M1920 0v32h-1920v-32z"></path>
 </symbol>
+<symbol id="map" viewBox="0 0 32 32">
+<path fill="none" stroke="#9da4bd" style="stroke: var(--color1, #9da4bd)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M26.667 13.819c0 7.635-10.667 14.181-10.667 14.181s-10.667-6.547-10.667-14.181c0-5.423 4.776-9.819 10.667-9.819s10.667 4.396 10.667 9.819v0z"></path>
+<path fill="none" stroke="#9da4bd" style="stroke: var(--color1, #9da4bd)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M16 18.667c2.209 0 4-1.791 4-4s-1.791-4-4-4v0c-2.209 0-4 1.791-4 4s1.791 4 4 4v0z"></path>
+</symbol>
+<symbol id="tel" viewBox="0 0 32 32">
+<path fill="none" stroke="#9da4bd" style="stroke: var(--color1, #9da4bd)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.7778" d="M30.222 23.116v4.29c0 0.003 0 0.007 0 0.011 0 1.581-1.281 2.862-2.862 2.862-0.090 0-0.179-0.004-0.267-0.012l0.011 0.001c-4.642-0.517-8.834-2.084-12.45-4.457l0.107 0.066c-3.478-2.233-6.349-5.104-8.515-8.471l-0.067-0.111c-2.315-3.525-3.883-7.738-4.38-12.274l-0.011-0.126c-0.007-0.077-0.012-0.167-0.012-0.258 0-1.579 1.28-2.86 2.86-2.86h4.292c0.008-0 0.017-0 0.026-0 1.439 0 2.629 1.062 2.831 2.445l0.002 0.015c0.181 1.372 0.516 2.72 1.001 4.018 0.393 1.045 0.142 2.224-0.644 3.019l-1.817 1.815c2.073 3.6 4.981 6.509 8.471 8.523l0.111 0.059 1.817-1.815c0.517-0.511 1.227-0.826 2.011-0.826 0.361 0 0.707 0.067 1.025 0.189l-0.020-0.007c1.298 0.484 2.647 0.818 4.018 1.001 1.4 0.202 2.463 1.393 2.463 2.833 0 0.025-0 0.049-0.001 0.074l0-0.004z"></path>
+</symbol>
+<symbol id="mail" viewBox="0 0 32 32">
+<path fill="none" stroke="#9da4bd" style="stroke: var(--color1, #9da4bd)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M6.4 6.667h19.2c1.32 0 2.4 1.049 2.4 2.333v14c0 1.283-1.080 2.333-2.4 2.333h-19.2c-1.32 0-2.4-1.051-2.4-2.333v-14c0-1.284 1.080-2.333 2.4-2.333z"></path>
+<path fill="none" stroke="#9da4bd" style="stroke: var(--color1, #9da4bd)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M26.667 9.333l-10.667 8-10.667-8"></path>
+</symbol>
 </defs>
 </svg>

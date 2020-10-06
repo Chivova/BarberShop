@@ -1,0 +1,33 @@
+.page-footer {
+  background-color: $footer-bg-color;
+}
+
+.footer-form {
+  padding: 84px 31px;
+  text-align: center;
+}
+
+.footer-title {
+  @include MarginTopBottom(0, 44px);
+  color: $white-text-color;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  // text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.form-field {
+  border: none;
+  border-bottom: 1px solid $footer-formtext-color;
+  background-color: transparent;
+  color: $footer-formtext-color;
+
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.form-label {
+  border-top: none;
+}
