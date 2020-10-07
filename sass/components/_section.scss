@@ -3,7 +3,7 @@
 }
 
 .section-subtitle {
-  @include MarginTopBottom(0, 0);
+  @include MarginTopBottom(0, 20px);
 
   color: $title-text-color;
 
@@ -15,18 +15,19 @@
   &.transparent-color {
     color: $secondary-text-color;
   }
+
   &::before {
     @extend %center-line;
   }
 }
 
 .section-title {
-  @include MarginTopBottom(0, 0);
+  @include MarginTopBottom(0, 44px);
 
   color: $title-text-color;
   font-family: Raleway;
   font-weight: 700;
   font-size: 42px;
-  line-height: 1.2;
+  line-height: 1.17;
   letter-spacing: 0.05em;
 }

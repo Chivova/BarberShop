@@ -282,8 +282,11 @@ summary {
   color: #303030;
 }
 
-.section-subtitle::before {
+.social-link-list::before, .section-subtitle::before {
   content: '';
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   width: 60px;
   height: 1px;
   margin-right: 40px;
@@ -334,6 +337,15 @@ img {
   overflow: hidden;
 }
 
+.page-header {
+  padding-top: 40px;
+  padding-bottom: 183px;
+  background-image: url("../images/mobile/slider.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .social-link-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,14 +353,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.social-link-list:before {
-  content: '';
-  width: 60px;
-  height: 1px;
-  color: #303030;
-  margin-right: 40px;
 }
 
 .social-link-item:first-child {
@@ -360,6 +364,39 @@ img {
   line-height: 1.36;
 }
 
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.modal,
+.modal-form,
+.sideway-panel,
+.logo,
+.site-nav {
+  display: none;
+}
+
 .section {
   padding-top: 84px;
   padding-bottom: 84px;
@@ -367,7 +404,7 @@ img {
 
 .section-subtitle {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   color: #303030;
   font-weight: 600;
   font-size: 11px;
@@ -381,17 +418,13 @@ img {
 
 .section-title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 44px;
   color: #303030;
   font-family: Raleway;
   font-weight: 700;
   font-size: 42px;
-  line-height: 1.2;
+  line-height: 1.17;
   letter-spacing: 0.05em;
-}
-
-.page-hero {
-  background-image: url("../images/mobile/slider.jpg");
 }
 
 .section-subtitle {
@@ -408,7 +441,7 @@ img {
 
 .hero-title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   color: #ffffff;
   font-family: Raleway;
   font-weight: 700;
@@ -427,7 +460,7 @@ img {
 
 .aboutus-title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   color: #303030;
   font-family: Raleway;
   font-weight: 700;
@@ -438,14 +471,14 @@ img {
 
 .aboutus-text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.6;
 }
 
 .aboutus-paragraph {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .section-services {
@@ -454,13 +487,17 @@ img {
 
 .section-services-title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 44px;
   color: #ffffff;
   font-family: Raleway;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.2;
   letter-spacing: 0.05em;
+}
+
+.services-prices2 {
+  margin-bottom: 50px;
 }
 
 .services-prices-item,
@@ -481,9 +518,20 @@ img {
   border-bottom: 1px solid #9da4bd;
 }
 
+.features-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #303030;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
 .features-paraghraph {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 44px;
   font-size: 18px;
   line-height: 1.7;
 }
@@ -533,9 +581,26 @@ img {
 
 .taem-position {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
   color: #ff6c00;
   line-height: 1.36;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 64px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-link:hover, .social-link:focus {
@@ -606,7 +671,10 @@ img {
 
 .footer-address {
   background-image: url("../images/mobile/footer.jpg");
-  padding: 84px 31px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 84px 40px;
   text-align: center;
   font-style: normal;
   font-size: 18px;

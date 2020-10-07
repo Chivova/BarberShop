@@ -1,17 +1,21 @@
+.page-header {
+  padding-top: 40px;
+  padding-bottom: 183px;
+  background-image: url('../images/mobile/slider.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .social-link-list {
   @extend %list;
 
   display: flex;
   align-items: center;
-  //   transform: rotate(-90deg);
-}
 
-.social-link-list:before {
-  content: '';
-  width: 60px;
-  height: 1px;
-  color: $title-text-color;
-  margin-right: 40px;
+  &::before {
+    @extend %center-line;
+  }
 }
 
 .social-link-item:first-child {

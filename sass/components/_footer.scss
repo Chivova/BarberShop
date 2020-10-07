@@ -57,8 +57,11 @@
 
 .footer-address {
   background-image: url('../images/mobile/footer.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  padding: 84px 31px;
+  padding: 84px 40px;
   text-align: center;
 
   font-style: normal;
@@ -106,6 +109,7 @@
 
 .copyright {
   @include MarginTopBottom(0, 0);
+
   margin-right: 21px;
   color: $secondary-text-color;
 

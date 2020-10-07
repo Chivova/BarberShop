@@ -3,7 +3,7 @@
 }
 
 .section-services-title {
-  @include MarginTopBottom(0, 0);
+  @include MarginTopBottom(0, 44px);
 
   color: $white-text-color;
   font-family: Raleway;
@@ -15,6 +15,10 @@
 .services-prices,
 .services-prices2 {
   @extend %list;
+}
+
+.services-prices2 {
+  margin-bottom: 50px;
 }
 
 .services-prices-item,
