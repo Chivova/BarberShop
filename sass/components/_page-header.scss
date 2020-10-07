@@ -1,0 +1,27 @@
+.social-link-list {
+  @extend %list;
+
+  display: flex;
+  align-items: center;
+  //   transform: rotate(-90deg);
+}
+
+.social-link-list:before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  color: $title-text-color;
+  margin-right: 40px;
+}
+
+.social-link-item:first-child {
+  margin-right: 40px;
+}
+
+.link {
+  @extend %link;
+
+  font-weight: 600;
+
+  line-height: 1.36;
+}

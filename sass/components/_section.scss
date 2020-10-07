@@ -6,6 +6,18 @@
   @include MarginTopBottom(0, 0);
 
   color: $title-text-color;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+
+  &.transparent-color {
+    color: $secondary-text-color;
+  }
+  &::before {
+    @extend %center-line;
+  }
 }
 
 .section-title {

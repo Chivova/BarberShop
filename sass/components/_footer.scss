@@ -32,6 +32,7 @@
   background-color: transparent;
   color: $footer-formtext-color;
 
+  font-weight: 600;
   font-size: 11px;
   line-height: 1.4;
   letter-spacing: 0.01em;
@@ -44,6 +45,7 @@
   background-color: transparent;
   color: $footer-formtext-color;
 
+  font-weight: 600;
   font-size: 11px;
   line-height: 1.4;
   letter-spacing: 0.01em;
@@ -62,7 +64,6 @@
   font-style: normal;
   font-size: 18px;
   line-height: 1.67;
-  letter-spacing: 0.02em;
 }
 
 .address-list {
@@ -79,9 +80,10 @@
 
   color: $white-text-color;
 
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 11px;
   line-height: 1.67;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.1em;
 }
 
 .work-time {
@@ -92,38 +94,22 @@
 
   font-size: 18px;
   line-height: 1.67;
-  letter-spacing: 0.02em;
 }
 
 .footer-bottom {
   display: flex;
-  padding: 44px 31px;
+  padding-top: 44px;
+  padding-bottom: 44px;
 
   background-color: $secondary-bg-color;
 }
 
 .copyright {
   @include MarginTopBottom(0, 0);
-  margin-right: auto;
+  margin-right: 21px;
   color: $secondary-text-color;
-}
 
-.social-link-list {
-  display: flex;
-  @extend %list;
-}
-
-.social-link-item:not(:last-child) {
-  margin-right: 40px;
-}
-
-.link {
-  @extend %link;
-}
-
-.border-center {
-  margin-right: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
 }

@@ -25,8 +25,9 @@
 .services-text,
 .prices-text {
   @include MarginTopBottom(0, 0);
+
   color: $secondary-text-color;
-  font-size: 14px;
+
   line-height: 2.14;
 }
 

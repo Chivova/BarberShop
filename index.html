@@ -17,121 +17,137 @@
   <body>
     <!-- Шапка и герой -->
     <header class="page-header">
-      <aside class="sideway-panel">
-        <a class="logo" href="./index.html">
-          <img src="./images/logo.svg" alt="" />
-        </a>
-        <a href="https://www.instagram.com/" aria-label="Сыылка на Instagram"
-          >Instagram</a
-        >
-        <a href="https://www.youtube.com/" aria-label="Сыылка на Youtube"
-          >Youtube</a
-        >
-      </aside>
-      <!-- Навигация -->
-      <nav class="nav">
-        <a class="logo-inverse" href="./index.html">
-          <img src="./images/logo-inverse.svg" alt="" />
-        </a>
-        <!-- Мобильное меню -->
-        <button
-          type="button"
-          class="menu-button is-open"
-          aria-controls="menu-container"
-          data-menu-button
-        >
-          <svg
-            width="40"
-            height="40"
-            aria-label="Переключатель мобильного меню"
-          >
-            <use class="icon-menu" href="./images/sprite.svg#menu"></use>
-            <use class="icon-close" href="./images/sprite.svg#close"></use>
-          </svg>
-        </button>
-        <div class="menu-container is-hidden" id="menu-container" data-menu>
-          <ul class="site-nav">
-            <li>О нас</li>
-            <li>Услуги и цены</li>
-            <li>Мастера</li>
-            <li>Контакты</li>
-          </ul>
-          <ul>
-            <li>
-              <a href="tel:+380441111111">+380441111111</a>
-            </li>
-            <li>
-              <button data-modal-open>ОНЛАЙН-ЗАПИСЬ</button>
-            </li>
-          </ul>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <form class="modal-form">
-                <h2>Онлайн-запись</h2>
-                <button class="btn-close" data-modal-close>
-                  <svg width="11" height="11">
-                    <use href="./images/sprite.svg#close"></use>
-                  </svg>
-                </button>
-                <div>
-                  <input
-                    class="form-field"
-                    type="text"
-                    name="user-name"
-                    id="name"
-                    placeholder="ИМЯ*"
-                  />
-                  <label class="form-label" for="name"></label>
-                </div>
-                <div>
-                  <input
-                    class="form-field"
-                    type="tel"
-                    name="tel"
-                    id="tel"
-                    placeholder="ТЕЛЕФОН*"
-                  />
-                  <label for="tel" class="form-label"></label>
-                </div>
-                <div>
-                  <textarea
-                    name="message"
-                    id="message"
-                    rows="10"
-                    placeholder="СООБЩЕНИЕ"
-                  ></textarea>
-                </div>
-                <button type="submit">ОТПРАВИТЬ</button>
-              </form>
-            </div>
-          </div>
-          <ul>
-            <li>
+      <div class="container">
+        <aside class="sideway-panel">
+          <a class="logo" href="./index.html">
+            <img src="./images/logo.svg" alt="" />
+          </a>
+          <ul class="social-link-list">
+            <li class="social-link-item">
               <a
+                class="link"
                 href="https://www.instagram.com/"
                 aria-label="Сыылка на Instagram"
-              >
-                <!-- <svg width="60" height="1">
-                  <use href="./images/sprite.svg#line"></use>
-                </svg> -->
-                Instagram</a
+                >Instagram</a
               >
             </li>
-            <li>
-              <a href="https://www.youtube.com/" aria-label="Сыылка на Youtube"
+            <li class="social-link-item">
+              <a
+                class="link"
+                href="https://www.youtube.com/"
+                aria-label="Сыылка на Youtube"
                 >Youtube</a
               >
             </li>
           </ul>
+        </aside>
+        <!-- Навигация -->
+        <nav class="nav">
+          <a class="logo-inverse" href="./index.html">
+            <img src="./images/logo-inverse.svg" alt="" />
+          </a>
+          <!-- Мобильное меню -->
+          <button
+            type="button"
+            class="menu-button is-open"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+              <use class="icon-close" href="./images/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <div class="menu-container is-hidden" id="menu-container" data-menu>
+            <ul class="site-nav">
+              <li>О нас</li>
+              <li>Услуги и цены</li>
+              <li>Мастера</li>
+              <li>Контакты</li>
+            </ul>
+            <ul>
+              <li>
+                <a href="tel:+380441111111">+380441111111</a>
+              </li>
+              <li>
+                <button data-modal-open>ОНЛАЙН-ЗАПИСЬ</button>
+              </li>
+            </ul>
+            <div class="backdrop is-hidden" data-modal>
+              <div class="modal">
+                <form class="modal-form">
+                  <h2>Онлайн-запись</h2>
+                  <button class="btn-close" data-modal-close>
+                    <svg width="11" height="11">
+                      <use href="./images/sprite.svg#close"></use>
+                    </svg>
+                  </button>
+                  <div>
+                    <input
+                      class="form-field"
+                      type="text"
+                      name="user-name"
+                      id="name"
+                      placeholder="ИМЯ*"
+                    />
+                    <label class="form-label" for="name"></label>
+                  </div>
+                  <div>
+                    <input
+                      class="form-field"
+                      type="tel"
+                      name="tel"
+                      id="tel"
+                      placeholder="ТЕЛЕФОН*"
+                    />
+                    <label for="tel" class="form-label"></label>
+                  </div>
+                  <div>
+                    <textarea
+                      name="message"
+                      id="message"
+                      rows="10"
+                      placeholder="СООБЩЕНИЕ"
+                    ></textarea>
+                  </div>
+                  <button type="submit">ОТПРАВИТЬ</button>
+                </form>
+              </div>
+            </div>
+            <ul>
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  aria-label="Сыылка на Instagram"
+                >
+                  <!-- <svg width="60" height="1">
+                        <use href="./images/sprite.svg#line"></use>
+                      </svg> -->
+                  Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/"
+                  aria-label="Сыылка на Youtube"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="page-hero">
+          <h2 class="section-subtitle transparent-color">A hair salon for men in Kyiv</h2>
+          <h1 class="hero-title">BarberShop</h1>
+          <p class="hero-text">
+            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
+            со вкусом.
+          </p>
         </div>
-      </nav>
-      <div class="page-hero">
-        <h2 class="hero-subtitle">A hair salon for men in Kyiv</h2>
-        <h1 class="hero-title">BarberShop</h1>
-        <p class="hero-text">
-          Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
-          вкусом.
-        </p>
       </div>
     </header>
     <main>
@@ -160,391 +176,405 @@
       <!-- services and prices -->
       <!-- Услуги и цены -->
       <section class="section section-services">
-        <h2 class="hero-subtitle">Проведи время в компании лучших мастеров</h2>
-        <h3 class="section-services-title">Услуги и цены</h3>
-        <ul class="services-prices">
-          <li class="services-prices-item">
-            <div class="services-text">Мужская стрижка</div>
-            <div class="border-bottom"></div>
-            <div class="prices-text">от 300 грн.</div>
-          </li>
-          <li class="services-prices-item">
-            <div class="services-text">Стрижка бороды</div>
-            <div class="border-bottom"></div>
-            <div class="prices-text">от 200 грн.</div>
-          </li>
-          <li class="services-prices-item">
-            <div class="services-text">Стрижка усов</div>
-            <div class="border-bottom"></div>
-            <div class="prices-text">от 200 грн.</div>
-          </li>
-          <li class="services-prices-item">
-            <div class="services-text">Бритье опасной бритвой</div>
-            <div class="border-bottom"></div>
-            <div class="prices-text">от 200 грн.</div>
-          </li>
-        </ul>
-        <ul class="services-prices2">
-          <li class="services-prices2-item">
-            <div class="services-text">Cтрижка у стажера</div>
-            <div class="border-bottom"></div>
-            <div class="prices-text">от 50 грн.</div>
-          </li>
-          <li class="services-prices2-item">
-            <div class="services-text">Стрижка под насадку</div>
-            <div class="border-bottom"></div>
-            <div class="prices-text">от 200 грн.</div>
-          </li>
-          <li class="services-prices2-item">
-            <div class="services-text">Детская стрижка (до 12 лет)</div>
-            <div class="border-bottom"></div>
-            <div class="prices-text">от 300 грн.</div>
-          </li>
-          <li class="services-prices2-item">
-            <div class="services-text">Камуфлирование седины</div>
-            <div class="border-bottom"></div>
-            <div class="prices-text">от 200 грн.</div>
-          </li>
-        </ul>
-        <button>ОНЛАЙН-ЗАПИСЬ</button>
+        <div class="container">
+          <h2 class="section-subtitle transparent-color">
+            Проведи время в компании лучших мастеров
+          </h2>
+          <h3 class="section-services-title">Услуги и цены</h3>
+          <ul class="services-prices">
+            <li class="services-prices-item">
+              <div class="services-text">Мужская стрижка</div>
+              <div class="border-bottom"></div>
+              <div class="prices-text">от 300 грн.</div>
+            </li>
+            <li class="services-prices-item">
+              <div class="services-text">Стрижка бороды</div>
+              <div class="border-bottom"></div>
+              <div class="prices-text">от 200 грн.</div>
+            </li>
+            <li class="services-prices-item">
+              <div class="services-text">Стрижка усов</div>
+              <div class="border-bottom"></div>
+              <div class="prices-text">от 200 грн.</div>
+            </li>
+            <li class="services-prices-item">
+              <div class="services-text">Бритье опасной бритвой</div>
+              <div class="border-bottom"></div>
+              <div class="prices-text">от 200 грн.</div>
+            </li>
+          </ul>
+          <ul class="services-prices2">
+            <li class="services-prices2-item">
+              <div class="services-text">Cтрижка у стажера</div>
+              <div class="border-bottom"></div>
+              <div class="prices-text">от 50 грн.</div>
+            </li>
+            <li class="services-prices2-item">
+              <div class="services-text">Стрижка под насадку</div>
+              <div class="border-bottom"></div>
+              <div class="prices-text">от 200 грн.</div>
+            </li>
+            <li class="services-prices2-item">
+              <div class="services-text">Детская стрижка (до 12 лет)</div>
+              <div class="border-bottom"></div>
+              <div class="prices-text">от 300 грн.</div>
+            </li>
+            <li class="services-prices2-item">
+              <div class="services-text">Камуфлирование седины</div>
+              <div class="border-bottom"></div>
+              <div class="prices-text">от 200 грн.</div>
+            </li>
+          </ul>
+          <button>ОНЛАЙН-ЗАПИСЬ</button>
+        </div>
       </section>
 
       <!-- Почему стоит выбрать нас -->
       <!-- Features -->
       <section class="section">
-        <h2 class="section-subtitle">СТАРАЯ ТРАДИЦИОННАЯ ШКОЛА</h2>
-        <h2 class="section-title">Почему приходят именно к нам?</h2>
-        <p class="features-paraghraph">
-          О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать,
-          чем 10 раз прочитать.
-        </p>
-        <ul class="features-list">
-          <li class="features-item">
-            <span class="features-number">600</span
-            ><sup class="features-number-sup">+</sup>
-            <p class="features-subtext">Довольных клиентов в день</p>
-          </li>
-          <li class="features-item">
-            <span class="features-number">50</span>
-            <sup class="features-number-sup">+</sup>
-            <p class="features-subtext">Наград за отличный сервис</p>
-          </li>
-          <li class="features-item">
-            <span class="features-number">20</span>
-            <sup class="features-number-sup">+</sup>
-            <p class="features-subtext">Лучших мастеров Киева</p>
-          </li>
-          <li class="features-item">
-            <span class="features-number">100</span>
-            <sup class="features-number-sup">+</sup>
-            <p class="features-subtext">Подарков постоянным клиентам</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section-subtitle">СТАРАЯ ТРАДИЦИОННАЯ ШКОЛА</h2>
+          <h2 class="section-title">Почему приходят именно к нам?</h2>
+          <p class="features-paraghraph">
+            О нас говорят только хорошее. Но лучше 1 раз увидеть и
+            прочувствовать, чем 10 раз прочитать.
+          </p>
+          <ul class="features-list">
+            <li class="features-item">
+              <span class="features-number">600</span
+              ><sup class="features-number-sup">+</sup>
+              <p class="features-subtext">Довольных клиентов в день</p>
+            </li>
+            <li class="features-item">
+              <span class="features-number">50</span>
+              <sup class="features-number-sup">+</sup>
+              <p class="features-subtext">Наград за отличный сервис</p>
+            </li>
+            <li class="features-item">
+              <span class="features-number">20</span>
+              <sup class="features-number-sup">+</sup>
+              <p class="features-subtext">Лучших мастеров Киева</p>
+            </li>
+            <li class="features-item">
+              <span class="features-number">100</span>
+              <sup class="features-number-sup">+</sup>
+              <p class="features-subtext">Подарков постоянным клиентам</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Наши Мастера -->
       <section class="section our-team-section">
-        <h2 class="section-subtitle">ДЛЯ НАСТОЯЩИХ ЦЕНИТЕЛЕЙ АТМОСФЕРЫ</h2>
-        <h2 class="section-title">Наши мастера</h2>
-        <ul class="our-team-list">
-          <li class="our-team-item">
-            <img
-              src="./images/mobile/john.jpg"
-              alt="John Smith Extreme Barber"
-            />
-            <h3 class="name-title">John Smith</h3>
-            <p class="taem-position">Extreme Barber</p>
-            <ul class="social-list">
-              <li class="social-item">
-                <a
-                  class="social-link"
-                  href="https://www.instagram.com/"
-                  aria-label="Сыылка на Instagram"
-                >
-                  <!--??????????????? Не работает на свг ширина и высота в html??????????????????????? -->
+        <div class="container">
+          <h2 class="section-subtitle">ДЛЯ НАСТОЯЩИХ ЦЕНИТЕЛЕЙ АТМОСФЕРЫ</h2>
+          <h2 class="section-title">Наши мастера</h2>
+          <ul class="our-team-list">
+            <li class="our-team-item">
+              <img
+                src="./images/mobile/john.jpg"
+                alt="John Smith Extreme Barber"
+              />
+              <h3 class="name-title">John Smith</h3>
+              <p class="taem-position">Extreme Barber</p>
+              <ul class="social-list">
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    href="https://www.instagram.com/"
+                    aria-label="Сыылка на Instagram"
+                  >
+                    <!--??????????????? Не работает на свг ширина и высота в html??????????????????????? -->
 
-                  <svg class="social-icon">
-                    <use href="./images/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-item">
-                <a
-                  class="social-link"
-                  href="https://twitter.com/"
-                  aria-label="Ссылка на Twitter"
-                >
-                  <svg class="social-icon">
-                    <use href="./images/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-item">
-                <a
-                  class="social-link"
-                  href="https://www.facebook.com/"
-                  aria-label="Ссылка на Facebook"
-                >
-                  <svg class="social-icon">
-                    <use href="./images/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-item">
-                <a
-                  class="social-link"
-                  href="https://www.linkedin.com/"
-                  aria-label="Ссылка на LinkedIn"
-                >
-                  <svg class="social-icon">
-                    <use href="./images/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="our-team-item">
-            <img
-              src="./images/mobile/michele.jpg"
-              alt="Michele Doe Extreme Barber"
-            />
-            <h3 class="name-title">Michele Doe</h3>
-            <p class="taem-position">Extreme Barber</p>
-            <ul class="social-list">
-              <li class="social-item">
-                <a
-                  class="social-link"
-                  href="https://www.instagram.com/"
-                  aria-label="Сыылка на Instagram"
-                >
-                  <svg class="social-icon">
-                    <use href="./images/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-item">
-                <a
-                  class="social-link"
-                  href="https://twitter.com/"
-                  aria-label="Ссылка на Twitter"
-                >
-                  <svg class="social-icon">
-                    <use href="./images/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-item">
-                <a
-                  class="social-link"
-                  href="https://www.facebook.com/"
-                  aria-label="Ссылка на Facebook"
-                >
-                  <svg class="social-icon">
-                    <use href="./images/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-item">
-                <a
-                  class="social-link"
-                  href="https://www.linkedin.com/"
-                  aria-label="Ссылка на LinkedIn"
-                >
-                  <svg class="social-icon">
-                    <use href="./images/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="our-team-item">
-            <img
-              src="./images/mobile/alan.jpg"
-              alt="Alan Black Extreme Barber"
-            />
-            <h3 class="name-title">Alan Black</h3>
-            <p class="taem-position">Extreme Barber</p>
-            <ul class="social-list">
-              <li class="social-item">
-                <a
-                  class="social-link"
-                  href="https://www.instagram.com/"
-                  aria-label="Сыылка на Instagram"
-                >
-                  <svg class="social-icon">
-                    <use href="./images/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-item">
-                <a
-                  class="social-link"
-                  href="https://twitter.com/"
-                  aria-label="Ссылка на Twitter"
-                >
-                  <svg class="social-icon">
-                    <use href="./images/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-item">
-                <a
-                  class="social-link"
-                  href="https://www.facebook.com/"
-                  aria-label="Ссылка на Facebook"
-                >
-                  <svg class="social-icon">
-                    <use href="./images/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-item">
-                <a
-                  class="social-link"
-                  href="https://www.linkedin.com/"
-                  aria-label="Ссылка на LinkedIn"
-                >
-                  <svg class="social-icon">
-                    <use href="./images/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+                    <svg class="social-icon">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    href="https://twitter.com/"
+                    aria-label="Ссылка на Twitter"
+                  >
+                    <svg class="social-icon">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    href="https://www.facebook.com/"
+                    aria-label="Ссылка на Facebook"
+                  >
+                    <svg class="social-icon">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    href="https://www.linkedin.com/"
+                    aria-label="Ссылка на LinkedIn"
+                  >
+                    <svg class="social-icon">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="our-team-item">
+              <img
+                src="./images/mobile/michele.jpg"
+                alt="Michele Doe Extreme Barber"
+              />
+              <h3 class="name-title">Michele Doe</h3>
+              <p class="taem-position">Extreme Barber</p>
+              <ul class="social-list">
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    href="https://www.instagram.com/"
+                    aria-label="Сыылка на Instagram"
+                  >
+                    <svg class="social-icon">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    href="https://twitter.com/"
+                    aria-label="Ссылка на Twitter"
+                  >
+                    <svg class="social-icon">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    href="https://www.facebook.com/"
+                    aria-label="Ссылка на Facebook"
+                  >
+                    <svg class="social-icon">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    href="https://www.linkedin.com/"
+                    aria-label="Ссылка на LinkedIn"
+                  >
+                    <svg class="social-icon">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="our-team-item">
+              <img
+                src="./images/mobile/alan.jpg"
+                alt="Alan Black Extreme Barber"
+              />
+              <h3 class="name-title">Alan Black</h3>
+              <p class="taem-position">Extreme Barber</p>
+              <ul class="social-list">
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    href="https://www.instagram.com/"
+                    aria-label="Сыылка на Instagram"
+                  >
+                    <svg class="social-icon">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    href="https://twitter.com/"
+                    aria-label="Ссылка на Twitter"
+                  >
+                    <svg class="social-icon">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    href="https://www.facebook.com/"
+                    aria-label="Ссылка на Facebook"
+                  >
+                    <svg class="social-icon">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    href="https://www.linkedin.com/"
+                    aria-label="Ссылка на LinkedIn"
+                  >
+                    <svg class="social-icon">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Наши Примеры Работ -->
       <section class="section">
-        <h2 class="section-subtitle">
-          НА ЛАТИНСКОМ ЯЗЫКЕ “БАРБА” ОЗНАЧАЕТ “БОРОДА”
-        </h2>
-        <ul class="example-list">
-          <li class="example-item">
-            <img
-              src="./images/mobile/example1.jpg"
-              alt="Пример нашей работы №1"
-            />
-          </li>
-          <li class="example-item">
-            <img
-              src="./images/mobile/example2.jpg"
-              alt="Пример нашей работы №2"
-            />
-          </li>
-          <li class="example-item">
-            <img
-              src="./images/mobile/example3.jpg"
-              alt="Пример нашей работы №3"
-            />
-          </li>
-          <li class="example-item">
-            <img
-              src="./images/mobile/example4.jpg"
-              alt="Пример нашей работы №4"
-            />
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section-subtitle">
+            НА ЛАТИНСКОМ ЯЗЫКЕ “БАРБА” ОЗНАЧАЕТ “БОРОДА”
+          </h2>
+          <ul class="example-list">
+            <li class="example-item">
+              <img
+                src="./images/mobile/example1.jpg"
+                alt="Пример нашей работы №1"
+              />
+            </li>
+            <li class="example-item">
+              <img
+                src="./images/mobile/example2.jpg"
+                alt="Пример нашей работы №2"
+              />
+            </li>
+            <li class="example-item">
+              <img
+                src="./images/mobile/example3.jpg"
+                alt="Пример нашей работы №3"
+              />
+            </li>
+            <li class="example-item">
+              <img
+                src="./images/mobile/example4.jpg"
+                alt="Пример нашей работы №4"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <!-- Подвал -->
     <footer class="page-footer">
       <!-- <div class="footer-wrap"> -->
-      <form class="footer-form">
-        <h2 class="footer-title">Онлайн-запись</h2>
-        <div class="form-group">
-          <input
-            class="form-field"
-            type="text"
-            name="user-name"
-            id="name"
-            placeholder="ИМЯ*"
-          />
-          <!-- <label class="form-label" for="name"></label> -->
-        </div>
-        <div class="form-group">
-          <input
-            class="form-field"
-            type="tel"
-            name="tel"
-            id="tel"
-            placeholder="ТЕЛЕФОН*"
-          />
-          <label for="tel" class="form-label"></label>
-        </div>
-        <div class="form-group">
-          <textarea
-            class="form-textarea"
-            name="message"
-            id="message"
-            rows="3"
-            placeholder="СООБЩЕНИЕ"
-          ></textarea>
-        </div>
-        <button type="submit">ОТПРАВИТЬ</button>
-      </form>
-      <!-- </div> -->
-      <!-- <div class="footer-wrap"> -->
-      <address class="footer-address">
-        <h2 class="footer-title">Контакты</h2>
-        <ul class="address-list">
-          <li class="address-item">
+      <div class="container">
+        <form class="footer-form">
+          <h2 class="footer-title">Онлайн-запись</h2>
+          <div class="form-group">
+            <input
+              class="form-field"
+              type="text"
+              name="user-name"
+              id="name"
+              placeholder="ИМЯ*"
+            />
+            <!-- <label class="form-label" for="name"></label> -->
+          </div>
+          <div class="form-group">
+            <input
+              class="form-field"
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="ТЕЛЕФОН*"
+            />
+            <label for="tel" class="form-label"></label>
+          </div>
+          <div class="form-group">
+            <textarea
+              class="form-textarea"
+              name="message"
+              id="message"
+              rows="3"
+              placeholder="СООБЩЕНИЕ"
+            ></textarea>
+          </div>
+          <button type="submit">ОТПРАВИТЬ</button>
+        </form>
+        <!-- </div> -->
+        <!-- <div class="footer-wrap"> -->
+        <address class="footer-address">
+          <h2 class="footer-title">Контакты</h2>
+          <ul class="address-list">
+            <li class="address-item">
+              <a
+                class="contact-link"
+                href="https://goo.gl/maps/WJrv6B9sN2dEzzpS6"
+              >
+                <svg class="adress-icon" width="16" height="18">
+                  <use href="./images/sprite.svg#map"></use>
+                </svg>
+                ул. Васильковая, 7А Киев, 08132</a
+              >
+            </li>
+            <li class="address-item">
+              <a class="contact-link" href="tel:+380961111111">
+                <svg class="adress-icon" width="16" height="18">
+                  <use href="./images/sprite.svg#tel"></use>
+                </svg>
+                +380961111111</a
+              >
+            </li>
+            <li class="address-item">
+              <a class="contact-link" href="mailto:barbershop@email.com">
+                <svg class="adress-icon" width="16" height="18">
+                  <use href="./images/sprite.svg#mail"></use>
+                </svg>
+                barbershop@email.com</a
+              >
+            </li>
+          </ul>
+          <h2 class="work-time-title">ВРЕМЯ РАБОТЫ</h2>
+          <p class="work-time">Ежедневно с 9:00 до 22:00</p>
+        </address>
+        <!-- </div> -->
+      </div>
+    </footer>
+
+    <div class="container">
+      <!-- или можно так же назвать footer-seperate (отдельный) -->
+      <div class="footer-bottom">
+        <p class="copyright">&copy Copyright 2020</p>
+        <ul class="social-link-list">
+          <li class="social-link-item">
             <a
-              class="contact-link"
-              href="https://goo.gl/maps/WJrv6B9sN2dEzzpS6"
+              class="link"
+              href="https://www.instagram.com/"
+              aria-label="Сыылка на Instagram"
             >
-              <svg class="adress-icon" width="16" height="18">
-                <use href="./images/sprite.svg#map"></use>
-              </svg>
-              ул. Васильковая, 7А Киев, 08132</a
-            >
+              Instagram
+            </a>
           </li>
-          <li class="address-item">
-            <a class="contact-link" href="tel:+380961111111">
-              <svg class="adress-icon" width="16" height="18">
-                <use href="./images/sprite.svg#tel"></use>
-              </svg>
-              +380961111111</a
-            >
-          </li>
-          <li class="address-item">
-            <a class="contact-link" href="mailto:barbershop@email.com">
-              <svg class="adress-icon" width="16" height="18">
-                <use href="./images/sprite.svg#mail"></use>
-              </svg>
-              barbershop@email.com</a
+          <li class="social-link-item">
+            <a
+              class="link"
+              href="https://www.youtube.com/"
+              aria-label="Сыылка на Youtube"
+              >Youtube</a
             >
           </li>
         </ul>
-        <h2 class="work-time-title">ВРЕМЯ РАБОТЫ</h2>
-        <p class="work-time">Ежедневно с 9:00 до 22:00</p>
-      </address>
-      <!-- </div> -->
-    </footer>
-    <!-- или можно так же назвать footer-seperate (отдельный) -->
-    <div class="footer-bottom">
-      <p class="copyright">&copy Copyright 2020</p>
-      <ul class="social-link-list">
-        <li class="social-link-item">
-          <a
-            class="link"
-            href="https://www.instagram.com/"
-            aria-label="Сыылка на Instagram"
-            ><svg class="border-center" width="60" height="1">
-              <use href="./images/sprite.svg#line"></use></svg
-            >Instagram
-          </a>
-        </li>
-        <li class="social-link-item">
-          <a
-            class="link"
-            href="https://www.youtube.com/"
-            aria-label="Сыылка на Youtube"
-            >Youtube</a
-          >
-        </li>
-      </ul>
+      </div>
     </div>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>

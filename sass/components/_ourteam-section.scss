@@ -11,21 +11,20 @@
 }
 
 .name-title {
-  @include MarginTopBottom(0, 0);
+  @include MarginTopBottom(0, 8px);
 
   color: $title-text-color;
+  font-weight: normal;
   font-size: 18px;
-  line-height: 1.4;
-  letter-spacing: 0.02em;
+  line-height: 1.39;
 }
 
 .taem-position {
   @include MarginTopBottom(0, 0);
 
   color: $accent-color;
-  font-size: 14px;
-  line-height: 1.4;
-  letter-spacing: 0.02em;
+
+  line-height: 1.36;
 }
 
 .social-list {
