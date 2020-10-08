@@ -1,5 +1,9 @@
 .section-services {
-  background-image: lin url('../images/mobile/price.jpg');
+  background-image: url('../images/mobile/service-price.png');
+  background-color: rgba(17, 19, 25, 1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .section-services-title {
@@ -38,4 +42,13 @@
 .border-bottom {
   width: 100%;
   border-bottom: 1px solid $secondary-text-color;
+}
+
+.primary-btn {
+  @extend %btn;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }

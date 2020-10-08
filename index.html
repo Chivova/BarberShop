@@ -63,18 +63,18 @@
             </svg>
           </button>
           <div class="menu-container is-hidden" id="menu-container" data-menu>
-            <ul class="site-nav">
-              <li>О нас</li>
-              <li>Услуги и цены</li>
-              <li>Мастера</li>
-              <li>Контакты</li>
+            <ul class="site-nav-list">
+              <li class="site-nav-item">О нас</li>
+              <li class="site-nav-item">Услуги и цены</li>
+              <li class="site-nav-item">Мастера</li>
+              <li class="site-nav-item">Контакты</li>
             </ul>
             <ul>
               <li>
                 <a href="tel:+380441111111">+380441111111</a>
               </li>
               <li>
-                <button data-modal-open>ОНЛАЙН-ЗАПИСЬ</button>
+                <button class="primary-btn" data-modal-open>ОНЛАЙН-ЗАПИСЬ</button>
               </li>
             </ul>
             <div class="backdrop is-hidden" data-modal>
@@ -114,7 +114,7 @@
                       placeholder="СООБЩЕНИЕ"
                     ></textarea>
                   </div>
-                  <button type="submit">ОТПРАВИТЬ</button>
+                  <button class="secondary-btn" type="submit">ОТПРАВИТЬ</button>
                 </form>
               </div>
             </div>
@@ -156,9 +156,9 @@
       <!-- О Нас -->
       <section class="section">
         <div class="container">
-          <ul>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
+          <ul class="aboutus-list">
+            <li class="aboutus-item"><img src="./images/tablet/about-us-img1.jpg" alt="" /></li>
+            <li class="aboutus-item"><img src="./images/tablet/about-us-img2.jpg" alt="" /></li>
           </ul>
           <h2 class="section-subtitle">О НАС</h2>
           <h2 class="aboutus-title">Лучший Барбершоп твоего города</h2>
@@ -173,7 +173,7 @@
             клиентами "на одной волне". Поэтому, мы всегда готовы
             усовершенствовать каждого, кто к нам приходит!
           </p>
-          <button>ОНЛАЙН-ЗАПИСЬ</button>
+          <button class="secondary-btn">ОНЛАЙН-ЗАПИСЬ</button>
         </div>
       </section>
 
@@ -229,7 +229,7 @@
               <div class="prices-text">от 200 грн.</div>
             </li>
           </ul>
-          <button>ОНЛАЙН-ЗАПИСЬ</button>
+          <button class="primary-btn">ОНЛАЙН-ЗАПИСЬ</button>
         </div>
       </section>
 
@@ -275,7 +275,7 @@
           <h2 class="section-title">Наши мастера</h2>
           <ul class="our-team-list">
             <li class="our-team-item">
-              <img
+              <img class="image"
                 src="./images/mobile/john.jpg"
                 alt="John Smith Extreme Barber"
               />
@@ -331,7 +331,7 @@
               </ul>
             </li>
             <li class="our-team-item">
-              <img
+              <img class="image"
                 src="./images/mobile/michele.jpg"
                 alt="Michele Doe Extreme Barber"
               />
@@ -385,7 +385,7 @@
               </ul>
             </li>
             <li class="our-team-item">
-              <img
+              <img class="image"
                 src="./images/mobile/alan.jpg"
                 alt="Alan Black Extreme Barber"
               />
@@ -513,7 +513,7 @@
               placeholder="СООБЩЕНИЕ"
             ></textarea>
           </div>
-          <button type="submit">ОТПРАВИТЬ</button>
+          <button class="primary-btn" type="submit">ОТПРАВИТЬ</button>
         </form>
         <!-- </div> -->
         <!-- <div class="footer-wrap"> -->

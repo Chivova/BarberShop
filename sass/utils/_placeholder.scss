@@ -29,3 +29,20 @@
 
   background-color: $primary-bg-color;
 }
+
+%btn {
+  display: inline-flex;
+  min-width: 160px;
+  padding: 12px 20px;
+  border: 1px solid $accent-color;
+  border-radius: 25px;
+  justify-content: center;
+
+  background-color: transparent;
+  color: $white-text-color;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+}

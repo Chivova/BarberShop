@@ -269,7 +269,7 @@ summary {
   display: list-item;
 }
 
-.social-link-list, .services-prices,
+.social-link-list, .site-nav-list, .aboutus-list, .services-prices,
 .services-prices2, .features-list, .our-team-list, .social-list, .example-list, .address-list {
   padding: 0;
   margin: 0;
@@ -309,6 +309,25 @@ summary {
   background-color: #ffffff;
 }
 
+.secondary-btn, .primary-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 160px;
+  padding: 12px 20px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+}
+
 body {
   background-color: #ffffff;
   color: #555555;
@@ -320,10 +339,6 @@ body {
 
 body.modal-open {
   overflow: hidden;
-}
-
-img {
-  display: block;
 }
 
 .visually-hidden {
@@ -362,6 +377,22 @@ img {
 .link {
   font-weight: 600;
   line-height: 1.36;
+}
+
+.site-nav-list {
+  color: #303030;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.site-nav-item:hover, .site-nav-item:focus {
+  color: #ff6c00;
 }
 
 .container {
@@ -427,18 +458,6 @@ img {
   letter-spacing: 0.05em;
 }
 
-.section-subtitle {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 11px;
-  line-height: 1.4;
-  letter-spacing: 0.01em;
-}
-
-.section-subtitle .transparent-color {
-  color: rgba(157, 164, 189, 0.6);
-}
-
 .hero-title {
   margin-top: 0;
   margin-bottom: 20px;
@@ -456,6 +475,20 @@ img {
   color: #9da4bd;
   font-size: 16px;
   line-height: 1.6;
+}
+
+.aboutus-list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutus-list {
+    display: block;
+  }
+}
+
+.aboutus-item:first-child {
+  margin-bottom: 30px;
 }
 
 .aboutus-title {
@@ -481,8 +514,21 @@ img {
   margin-bottom: 20px;
 }
 
+.secondary-btn {
+  color: #303030;
+}
+
+.secondary-btn:hover, .secondary-btn:focus {
+  background-color: #ff6c00;
+  color: #ffffff;
+}
+
 .section-services {
-  background-image: lin url("../images/mobile/price.jpg");
+  background-image: url("../images/mobile/service-price.png");
+  background-color: #111319;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .section-services-title {
@@ -516,6 +562,10 @@ img {
 .border-bottom {
   width: 100%;
   border-bottom: 1px solid #9da4bd;
+}
+
+.primary-btn:hover, .primary-btn:focus {
+  background-color: #ff6c00;
 }
 
 .features-title {
@@ -568,6 +618,11 @@ img {
 
 .our-team-item {
   text-align: center;
+}
+
+.image {
+  display: block;
+  padding-bottom: 30px;
 }
 
 .name-title {
@@ -670,7 +725,8 @@ img {
 }
 
 .footer-address {
-  background-image: url("../images/mobile/footer.jpg");
+  background-image: url("../images/mobile/footer-contact.png");
+  background-color: #191c26;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -716,12 +772,12 @@ img {
   display: flex;
   padding-top: 44px;
   padding-bottom: 44px;
-  background-color: #f7f7f7;
 }
 
 .copyright {
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 27px;
   margin-right: 21px;
   color: #9da4bd;
   font-weight: 600;

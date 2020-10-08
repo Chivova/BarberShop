@@ -9,7 +9,10 @@
 .our-team-item {
   text-align: center;
 }
-
+.image {
+  display: block;
+  padding-bottom: 30px;
+}
 .name-title {
   @include MarginTopBottom(0, 8px);
 

@@ -29,3 +29,25 @@
 
   line-height: 1.36;
 }
+
+.site-nav-list {
+  @extend %list;
+
+  color: $title-text-color;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+}
+
+.site-nav-item {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
