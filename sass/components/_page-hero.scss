@@ -1,5 +1,5 @@
 .hero-title {
-  @include MarginTopBottom(0, 20px);
+  @include marginTopBottom(0, 20px);
 
   color: $white-text-color;
   font-family: Raleway;
@@ -10,7 +10,7 @@
 }
 
 .hero-text {
-  @include MarginTopBottom(0, 0);
+  @include marginTopBottom(0, 0);
 
   color: $secondary-text-color;
   font-size: 16px;

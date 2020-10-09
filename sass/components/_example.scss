@@ -3,5 +3,5 @@
 }
 
 .example-item:not(:last-child) {
-  @include MarginTopBottom(0, 30px);
+  @include marginTopBottom(0, 30px);
 }

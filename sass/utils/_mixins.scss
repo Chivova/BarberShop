@@ -1,9 +1,9 @@
-@mixin PaddingTopBottom($tvalue, $bvalue) {
+@mixin paddingTopBottom($tvalue, $bvalue) {
   padding-top: $tvalue;
   padding-bottom: $bvalue;
 }
 
-@mixin MarginTopBottom($tvalue, $bvalue) {
+@mixin marginTopBottom($tvalue, $bvalue) {
   margin-top: $tvalue;
   margin-bottom: $bvalue;
 }

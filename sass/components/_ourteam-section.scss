@@ -14,7 +14,7 @@
   padding-bottom: 30px;
 }
 .name-title {
-  @include MarginTopBottom(0, 8px);
+  @include marginTopBottom(0, 8px);
 
   color: $title-text-color;
   font-weight: normal;
@@ -23,7 +23,7 @@
 }
 
 .taem-position {
-  @include MarginTopBottom(0, 30px);
+  @include marginTopBottom(0, 30px);
 
   color: $accent-color;
 

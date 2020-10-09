@@ -1,5 +1,5 @@
 .features-title {
-  @include MarginTopBottom(0, 20px);
+  @include marginTopBottom(0, 20px);
 
   color: $title-text-color;
 
@@ -11,7 +11,7 @@
 }
 
 .features-paraghraph {
-  @include MarginTopBottom(0, 44px);
+  @include marginTopBottom(0, 44px);
 
   font-size: 18px;
   line-height: 1.7;
@@ -38,7 +38,7 @@
 }
 
 .features-subtext {
-  @include MarginTopBottom(0, 0);
+  @include marginTopBottom(0, 0);
 
   font-weight: 600;
   font-size: 11px;

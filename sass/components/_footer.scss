@@ -12,7 +12,7 @@
 }
 
 .footer-title {
-  @include MarginTopBottom(0, 44px);
+  @include marginTopBottom(0, 44px);
   color: $white-text-color;
   font-family: Raleway;
   font-weight: 700;
@@ -23,7 +23,7 @@
 }
 
 .form-group {
-  @include MarginTopBottom(0, 44px);
+  @include marginTopBottom(0, 44px);
 }
 
 .form-field {
@@ -72,15 +72,15 @@
 
 .address-list {
   @extend %list;
-  @include MarginTopBottom(0, 44px);
+  @include marginTopBottom(0, 44px);
 }
 
 .address-item:not(:last-child) {
-  @include MarginTopBottom(0, 20px);
+  @include marginTopBottom(0, 20px);
 }
 
 .work-time-title {
-  @include MarginTopBottom(0, 20px);
+  @include marginTopBottom(0, 20px);
 
   color: $white-text-color;
 
@@ -91,7 +91,7 @@
 }
 
 .work-time {
-  @include MarginTopBottom(0, 0);
+  @include marginTopBottom(0, 0);
 
   text-align: center;
   color: $secondary-text-color;
@@ -107,7 +107,7 @@
 }
 
 .copyright {
-  @include MarginTopBottom(0, 0);
+  @include marginTopBottom(0, 0);
   padding-top: 27px;
   margin-right: 21px;
 

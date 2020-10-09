@@ -7,7 +7,7 @@
 }
 
 .section-services-title {
-  @include MarginTopBottom(0, 44px);
+  @include marginTopBottom(0, 44px);
 
   color: $white-text-color;
   font-family: Raleway;
@@ -32,7 +32,7 @@
 
 .services-text,
 .prices-text {
-  @include MarginTopBottom(0, 0);
+  @include marginTopBottom(0, 0);
 
   color: $secondary-text-color;
 

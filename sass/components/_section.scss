@@ -1,9 +1,9 @@
 .section {
-  @include PaddingTopBottom(84px, 84px);
+  @include paddingTopBottom(84px, 84px);
 }
 
 .section-subtitle {
-  @include MarginTopBottom(0, 20px);
+  @include marginTopBottom(0, 20px);
 
   color: $title-text-color;
 
@@ -22,7 +22,7 @@
 }
 
 .section-title {
-  @include MarginTopBottom(0, 44px);
+  @include marginTopBottom(0, 44px);
 
   color: $title-text-color;
   font-family: Raleway;

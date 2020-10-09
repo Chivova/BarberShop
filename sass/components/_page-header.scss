@@ -1,4 +1,12 @@
+.logo-inverse {
+  padding-left: 25px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .page-header {
+  position: relative;
   padding-top: 40px;
   padding-bottom: 183px;
   background-image: url('../images/mobile/slider.jpg');
@@ -32,6 +40,7 @@
 
 .site-nav-list {
   @extend %list;
+  @include paddingTopBottom(0, 64px);
 
   color: $title-text-color;
 
@@ -50,4 +59,29 @@
   &:focus {
     color: $accent-color;
   }
+}
+
+.recording-list {
+  @extend %list;
+  @include paddingTopBottom(0, 64px);
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.recording-item {
+  @media screen and (max-width: 767px) {
+    &:first-child {
+      @include marginTopBottom(0, 24px);
+    }
+  }
+}
+
+.recording-tel {
+  @extend %link;
+
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
 }

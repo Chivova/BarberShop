@@ -12,7 +12,7 @@
 }
 
 .aboutus-title {
-  @include MarginTopBottom(0, 20px);
+  @include marginTopBottom(0, 20px);
 
   color: $title-text-color;
   font-family: Raleway;
@@ -22,14 +22,14 @@
   letter-spacing: 0.05em;
 }
 .aboutus-text {
-  @include MarginTopBottom(0, 20px);
+  @include marginTopBottom(0, 20px);
 
   font-size: 16px;
   line-height: 1.6;
 }
 
 .aboutus-paragraph {
-  @include MarginTopBottom(0, 20px);
+  @include marginTopBottom(0, 20px);
 }
 
 .secondary-btn {
