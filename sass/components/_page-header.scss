@@ -1,18 +1,27 @@
+.header-container {
+  position: relative;
+  padding-left: 32px;
+  padding-top: 40px;
+  left: 39px;
+  padding-bottom: 183px;
+}
+
 .logo-inverse {
-  padding-left: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
 .page-header {
-  position: relative;
-  padding-top: 40px;
+  // position: relative;
   padding-bottom: 183px;
-  background-image: url('../images/mobile/slider.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  // background-image: url('../images/mobile/slider.jpg');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
 }
 
 .social-link-list {

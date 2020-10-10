@@ -1,3 +1,10 @@
+.page-hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .hero-title {
   @include marginTopBottom(0, 20px);
 
