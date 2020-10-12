@@ -1,12 +1,9 @@
 .header-container {
   position: relative;
-  padding-left: 32px;
-  padding-top: 40px;
-  left: 39px;
-  padding-bottom: 183px;
 }
 
 .logo-inverse {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -16,8 +13,7 @@
 }
 
 .page-header {
-  // position: relative;
-  padding-bottom: 183px;
+  // padding-bottom: 183px;
   // background-image: url('../images/mobile/slider.jpg');
   // background-repeat: no-repeat;
   // background-size: cover;
