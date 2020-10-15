@@ -270,20 +270,20 @@ summary {
   display: list-item;
 }
 
-.social-link-list, .site-nav-list, .recording-list, .aboutus-list, .services-prices,
+.aboutus-list, .services-prices,
 .services-prices2, .features-list, .our-team-list, .social-list, .example-list, .address-list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.link, .recording-tel, .contact-link {
+.contact-link {
   display: block;
   text-decoration: none;
   color: #303030;
 }
 
-.social-link-list::before, .section-subtitle::before {
+.section-subtitle::before {
   content: '';
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -353,83 +353,35 @@ body.modal-open {
   overflow: hidden;
 }
 
-.header-container {
+.logo {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: inline-block;
+  width: 69px;
+  height: 56px;
+  fill: #ffffff;
+}
+
+.header-wrapper {
   position: relative;
 }
 
-.logo-inverse {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
+.page-header {
+  padding-top: 40px;
 }
 
-@media screen and (min-width: 768px) {
-  .logo-inverse {
-    display: none;
-  }
-}
-
-.social-link-list {
+.header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.social-link-item:first-child {
-  margin-right: 40px;
-}
-
-.link {
-  font-weight: 600;
-  line-height: 1.36;
-}
-
-.site-nav-list {
-  padding-top: 0;
-  padding-bottom: 64px;
-  color: #303030;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.39;
-  letter-spacing: 0.1em;
-}
-
-.site-nav-item:not(:last-child) {
-  margin-bottom: 24px;
-}
-
-.site-nav-item:hover, .site-nav-item:focus {
-  color: #ff6c00;
-}
-
-.recording-list {
-  padding-top: 0;
-  padding-bottom: 64px;
-}
-
-@media screen and (min-width: 1200px) {
-  .recording-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .recording-item:first-child {
-    margin-top: 0;
-    margin-bottom: 24px;
-  }
-}
-
-.recording-tel {
-  font-size: 18px;
-  line-height: 1.39;
-  letter-spacing: 0.1em;
 }
 
 .container {
@@ -458,13 +410,13 @@ body.modal-open {
 }
 
 .menu-button {
-  position: absolute;
-  top: 0;
-  right: 0;
   display: inline-block;
   margin: 0;
   padding: 0;
   border: 0;
+  width: 40px;
+  height: 40px;
+  z-index: 3;
   background-color: transparent;
 }
 
@@ -486,59 +438,15 @@ body.modal-open {
   opacity: 1;
 }
 
-.menu-container .social-link-list {
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-container .social-link-list {
-    display: none;
-  }
-}
-
-.menu-container .social-link-item:first-child {
-  margin-top: 0;
-  margin-bottom: 24px;
-}
-
-.menu-container {
-  opacity: 0;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.menu-container.is-open {
-  position: absolute;
-  opacity: 1;
-  min-width: 337px;
-  min-height: 796px;
-  padding-top: 118px;
-  padding-left: 40px;
-  background-color: #ffffff;
-  -webkit-box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), -2px 0px 4px rgba(0, 0, 0, 0.08), -1px 0px 3px rgba(0, 0, 0, 0.16);
-          box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), -2px 0px 4px rgba(0, 0, 0, 0.08), -1px 0px 3px rgba(0, 0, 0, 0.16);
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transform: translateX(30%);
-          transform: translateX(30%);
-}
-
-.modal,
-.modal-form,
-.sideway-panel,
-.logo,
-.site-nav {
-  display: none;
-}
-
 /* Слайдер: */
 .slider {
-  max-width: 90%;
   /* Положение элемента устанавливается относительно его исходной позиции: */
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   /* Центрируем по горизонтали: */
   margin: auto;
-  height: 300px;
+  min-height: 580px;
 }
 
 /* Картинка масштабируется по отношению к родительскому элементу: */
@@ -547,7 +455,7 @@ body.modal-open {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 300px;
+  min-height: 580px;
 }
 
 /* Кнопки назад и вперёд: */
@@ -639,25 +547,6 @@ body.modal-open {
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
-}
-
-.hero-title {
-  margin-top: 0;
-  margin-bottom: 20px;
-  color: #ffffff;
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 1.2;
-  letter-spacing: 0.05em;
-}
-
-.hero-text {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #9da4bd;
-  font-size: 16px;
-  line-height: 1.6;
 }
 
 .aboutus-list {
