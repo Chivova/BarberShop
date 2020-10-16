@@ -270,7 +270,7 @@ summary {
   display: list-item;
 }
 
-.social-link-item, .aboutus-list, .services-prices,
+.site-nav-list, .recording-list, .social-link-list, .social-link-item, .aboutus-list, .services-prices,
 .services-prices2, .features-list, .our-team-list, .social-list, .example-list, .address-list {
   padding: 0;
   margin: 0;
@@ -327,6 +327,7 @@ summary {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
+  text-transform: uppercase;
 }
 
 body {
@@ -462,31 +463,16 @@ body.modal-open {
   opacity: 1;
 }
 
-.menu-container .social-link-list {
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-container .social-link-list {
-    display: none;
-  }
-}
-
-.menu-container .social-link-item:first-child {
-  margin-top: 0;
-  margin-bottom: 24px;
-}
-
 .menu-container {
-  opacity: 0;
   z-index: 4;
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%);
 }
 
 .menu-container.is-open {
   position: absolute;
   top: 0;
   right: 0;
-  opacity: 1;
   min-width: 337px;
   min-height: 796px;
   padding-top: 118px;
@@ -495,10 +481,46 @@ body.modal-open {
   background-color: #ffffff;
   -webkit-box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), -2px 0px 4px rgba(0, 0, 0, 0.08), -1px 0px 3px rgba(0, 0, 0, 0.16);
           box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), -2px 0px 4px rgba(0, 0, 0, 0.08), -1px 0px 3px rgba(0, 0, 0, 0.16);
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.site-nav-list {
+  padding-top: 0;
+  padding-bottom: 64px;
+}
+
+.site-nav-item {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.site-nav-item:hover, .site-nav-item:focus {
+  color: #ff6c00;
+}
+
+.recording-list {
+  padding-top: 0;
+  padding-bottom: 64px;
+}
+
+.recording-item {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+}
+
+.recording-item:first-child {
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 /* Слайдер: */
