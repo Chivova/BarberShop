@@ -78,11 +78,13 @@
         <a class="previous" onclick="previousSlide()">&#10094;</a>
         <a class="next" onclick="nextSlide()">&#10095;</a>
       </div>
-        <div>
-          <h3>A hair salon for men in Kyiv</h3>
-          <h2>BarberShop</h2>
-          <p>Мы эксперты в модных мужских стрижках.
-          Работаем быстро, осторожно и со вкусом.</p>
+        <div class="container">
+          <div class="greeting-content">
+            <h3 class="section-subtitle transparent-color">A hair salon for men in Kyiv</h3>
+            <h2 class="greeting-title">BarberShop</h2>
+            <p class="greeting-text">Мы эксперты в модных мужских стрижках.
+              Работаем быстро, осторожно и со вкусом.</p>
+          </div>
         </div>
       </div>
       
@@ -102,7 +104,7 @@
             <li class="aboutus-item"><img src="./images/tablet/about-us-img1.jpg" alt="" /></li>
             <li class="aboutus-item"><img src="./images/tablet/about-us-img2.jpg" alt="" /></li>
           </ul>
-          <h2 class="section-subtitle">О НАС</h2>
+          <h2 class="section-subtitle">о нас</h2>
           <h2 class="aboutus-title">Лучший Барбершоп твоего города</h2>
           <p class="aboutus-text">
             Если ты хочешь добавить в свой образ больше уверенности – тебе точно
@@ -121,12 +123,12 @@
 
       <!-- services and prices -->
       <!-- Услуги и цены -->
-      <section class="section section-services">
-        <div class="container">
+      <section class="section section-services container">
+        <!-- <div class="container"> -->
           <h2 class="section-subtitle transparent-color">
             Проведи время в компании лучших мастеров
           </h2>
-          <h3 class="section-services-title">Услуги и цены</h3>
+          <h3 class="section-title inverse">Услуги и цены</h3>
           <ul class="services-prices">
             <li class="services-prices-item">
               <div class="services-text">Мужская стрижка</div>
@@ -217,8 +219,8 @@
           <h2 class="section-title">Наши мастера</h2>
           <ul class="our-team-list">
             <li class="our-team-item">
-              <img class="image"
-                src="./images/mobile/john.jpg"
+              <img class="our-team-img"our-team-img
+                src="./images/mobile/420-john.jpg"
                 alt="John Smith Extreme Barber"
               />
               <h3 class="name-title">John Smith</h3>
@@ -273,8 +275,8 @@
               </ul>
             </li>
             <li class="our-team-item">
-              <img class="image"
-                src="./images/mobile/michele.jpg"
+              <img class="our-team-img"
+                src="./images/mobile/420-michele.jpg"
                 alt="Michele Doe Extreme Barber"
               />
               <h3 class="name-title">Michele Doe</h3>
@@ -327,8 +329,8 @@
               </ul>
             </li>
             <li class="our-team-item">
-              <img class="image"
-                src="./images/mobile/alan.jpg"
+              <img class="our-team-img"
+                src="./images/mobile/420-alan.jpg"
                 alt="Alan Black Extreme Barber"
               />
               <h3 class="name-title">Alan Black</h3>
@@ -385,32 +387,32 @@
       </section>
 
       <!-- Наши Примеры Работ -->
-      <section class="section">
+      <section class="section example">
         <div class="container">
-          <h2 class="section-subtitle">
+          <h2 class="section-subtitle example-subtitle">
             НА ЛАТИНСКОМ ЯЗЫКЕ “БАРБА” ОЗНАЧАЕТ “БОРОДА”
           </h2>
           <ul class="example-list">
             <li class="example-item">
-              <img
+              <img class="img"
                 src="./images/mobile/example1.jpg"
                 alt="Пример нашей работы №1"
               />
             </li>
             <li class="example-item">
-              <img
+              <img class="img"
                 src="./images/mobile/example2.jpg"
                 alt="Пример нашей работы №2"
               />
             </li>
             <li class="example-item">
-              <img
+              <img class="img"
                 src="./images/mobile/example3.jpg"
                 alt="Пример нашей работы №3"
               />
             </li>
             <li class="example-item">
-              <img
+              <img class="img"
                 src="./images/mobile/example4.jpg"
                 alt="Пример нашей работы №4"
               />
@@ -421,11 +423,11 @@
     </main>
 
     <!-- Подвал -->
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <!-- <div class="footer-wrap"> -->
       <!-- <div class="container"> -->
         <form class="footer-form">
-          <h2 class="footer-title">Онлайн-запись</h2>
+          <h2 class="section-title inverse">Онлайн-запись</h2>
           <div class="form-group">
             <input
               class="form-field"
@@ -460,7 +462,7 @@
         <!-- </div> -->
         <!-- <div class="footer-wrap"> -->
         <address class="footer-address">
-          <h2 class="footer-title">Контакты</h2>
+          <h2 class="section-title inverse">Контакты</h2>
           <ul class="address-list">
             <li class="address-item">
               <a
@@ -496,7 +498,6 @@
         <!-- </div> -->
       </>
     </footer>
-
     <div class="container">
       <!-- или можно так же назвать footer-seperate (отдельный) -->
       <div class="footer-bottom">

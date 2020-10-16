@@ -4,20 +4,19 @@
 
 .section-subtitle {
   @include marginTopBottom(0, 20px);
-
   color: $title-text-color;
 
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
-
-  &.transparent-color {
-    color: $secondary-text-color;
-  }
+  text-transform: uppercase;
 
   &::before {
-    @extend %center-line;
+    @extend %centered-line;
+  }
+  &.transparent-color {
+    color: $transparent-text-color;
   }
 }
 
@@ -28,6 +27,27 @@
   font-family: Raleway;
   font-weight: 700;
   font-size: 42px;
-  line-height: 1.17;
+  line-height: 1.2;
   letter-spacing: 0.05em;
+
+  &.inverse {
+    color: $white-text-color;
+  }
+}
+
+.link {
+  @extend %link;
+}
+
+.social-link-item {
+  @extend %list;
+
+  &:before {
+    content: '';
+    display: inline-flex;
+    width: 60px;
+    height: 1px;
+    margin-right: 40px;
+    color: $title-text-color;
+  }
 }

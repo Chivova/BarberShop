@@ -12,6 +12,7 @@
 
 .header-wrapper {
   position: relative;
+  min-height: 580px;
 }
 
 .page-header {
@@ -22,4 +23,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.greeting-content {
+  position: absolute;
+  top: 208px;
+  max-width: 306px;
+  pointer-events: none;
+}
+
+.greeting-title {
+  font-size: 48px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: $white-text-color;
+}
+
+.greeting-text {
+  color: $transparent-text-color;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.02em;
 }

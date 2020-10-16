@@ -1,7 +1,16 @@
+.example-subtitle {
+  @include marginTopBottom(0, 44px);
+}
+
 .example-list {
   @extend %list;
 }
 
 .example-item:not(:last-child) {
   @include marginTopBottom(0, 30px);
+}
+
+.img {
+  display: block;
+  width: 100%;
 }

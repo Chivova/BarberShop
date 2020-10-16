@@ -1,11 +1,13 @@
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @media screen and (min-width: 480px) {
     width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   // @media screen and (max-width: 767px) {
   //   position: relative;

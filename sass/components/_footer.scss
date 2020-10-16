@@ -9,17 +9,10 @@
 .footer-form {
   padding: 84px 31px;
   text-align: center;
-}
-
-.footer-title {
-  @include marginTopBottom(0, 44px);
-  color: $white-text-color;
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  // text-align: center;
-  letter-spacing: 0.05em;
+  max-width: 480px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 480px;
 }
 
 .form-group {
@@ -27,29 +20,44 @@
 }
 
 .form-field {
+  width: 100%;
   border: none;
   border-bottom: 1px solid $footer-formtext-color;
   background-color: transparent;
+
   color: $footer-formtext-color;
 
   font-weight: 600;
   font-size: 11px;
   line-height: 1.4;
   letter-spacing: 0.01em;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $white-text-color;
+    cursor: url(./images/vector.svg);
+  }
 }
 
 .form-textarea {
+  width: 100%;
   resize: none;
   border: none;
   border-bottom: 1px solid $footer-formtext-color;
-  background-color: transparent;
+
   color: $footer-formtext-color;
+  background-color: transparent;
 
   font-weight: 600;
   font-size: 11px;
   line-height: 1.4;
   letter-spacing: 0.01em;
+
+  &:hover {
+    border-bottom: 1px solid $white-text-color;
+  }
 }
+
 .contact-link {
   @extend %link;
   color: $secondary-text-color;
@@ -68,6 +76,10 @@
   font-style: normal;
   font-size: 18px;
   line-height: 1.67;
+
+  & > .section-title {
+    @include marginTopBottom(0, 40px);
+  }
 }
 
 .address-list {
