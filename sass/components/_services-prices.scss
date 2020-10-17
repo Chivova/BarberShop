@@ -16,13 +16,15 @@
   line-height: 1.2;
   letter-spacing: 0.05em;
 }
+
+.serices-prices-wrap {
+  @include marginTopBottom(0, 50px);
+  padding: 30px 30px;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
 .services-prices,
 .services-prices2 {
   @extend %list;
-}
-
-.services-prices2 {
-  margin-bottom: 50px;
 }
 
 .services-prices-item,

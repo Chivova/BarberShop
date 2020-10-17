@@ -464,6 +464,7 @@ body.modal-open {
 }
 
 .menu-container {
+  display: none;
   z-index: 4;
   -webkit-transform: translateX(120%);
           transform: translateX(120%);
@@ -473,6 +474,7 @@ body.modal-open {
   position: absolute;
   top: 0;
   right: 0;
+  display: block;
   min-width: 337px;
   min-height: 796px;
   padding-top: 118px;
@@ -715,8 +717,12 @@ body.modal-open {
   letter-spacing: 0.05em;
 }
 
-.services-prices2 {
+.serices-prices-wrap {
+  margin-top: 0;
   margin-bottom: 50px;
+  padding: 30px 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
 .services-prices-item,
@@ -757,6 +763,31 @@ body.modal-open {
   margin-bottom: 44px;
   font-size: 18px;
   line-height: 1.7;
+}
+
+@media screen and (min-width: 480px) {
+  .features-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.features-item {
+  padding: 20px 35px;
+  height: 100%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+@media screen and (max-width: 479px) {
+  .features-item {
+    margin: 15px;
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
+  }
 }
 
 .features-number {
