@@ -368,6 +368,7 @@ body.modal-open {
 .header-wrapper {
   position: relative;
   min-height: 580px;
+  overflow: hidden;
 }
 
 .page-header {
@@ -387,13 +388,16 @@ body.modal-open {
 }
 
 .greeting-content {
-  position: absolute;
-  top: 208px;
+  position: relative;
+  top: 100px;
   max-width: 306px;
   pointer-events: none;
+  z-index: 1;
 }
 
 .greeting-title {
+  margin-top: 0;
+  margin-bottom: 20px;
   font-size: 48px;
   line-height: 1.17;
   letter-spacing: 0.05em;
@@ -401,6 +405,8 @@ body.modal-open {
 }
 
 .greeting-text {
+  margin-top: 0;
+  margin-bottom: 0;
   color: rgba(157, 164, 189, 0.6);
   font-size: 16px;
   line-height: 1.63;
@@ -465,8 +471,6 @@ body.modal-open {
 
 .menu-container {
   z-index: 4;
-  -webkit-transform: translateX(120%);
-          transform: translateX(120%);
 }
 
 .menu-container.is-open {
@@ -488,6 +492,8 @@ body.modal-open {
     padding-top: 118px;
     padding-left: 40px;
     padding-right: 40px;
+    -webkit-transform: translateX(120%);
+            transform: translateX(120%);
   }
 }
 

@@ -29,7 +29,6 @@
   // opacity: 0;
   // display: none;
   z-index: 4;
-  transform: translateX(+120%);
 
   &.is-open {
     background-color: $primary-bg-color;
@@ -50,6 +49,7 @@
     padding-top: 118px;
     padding-left: 40px;
     padding-right: 40px;
+    transform: translateX(+120%);
   }
 
   @media screen and (min-width: 768px) {
