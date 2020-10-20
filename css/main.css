@@ -270,7 +270,7 @@ summary {
   display: list-item;
 }
 
-.social-link-item, .aboutus-list, .services-prices,
+.site-nav-list, .social-link-item, .aboutus-list, .services-prices,
 .services-prices2, .features-list, .our-team-list, .social-list, .example-list, .address-list {
   padding: 0;
   margin: 0;
@@ -354,6 +354,53 @@ body.modal-open {
   overflow: hidden;
 }
 
+.header-wrap {
+  position: relative;
+  min-height: 680px;
+}
+
+.social-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 680px;
+  height: calc(155px + (100vw - 1280px) / 2);
+  background-color: #fff;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: translateY(100%) rotate(-90deg);
+          transform: translateY(100%) rotate(-90deg);
+  z-index: 1;
+}
+
+.logo {
+  display: inline-block;
+  width: 69px;
+  height: 55px;
+  fill: #303030;
+}
+
+.site-nav {
+  width: 1280px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.site-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-nav-item {
+  z-index: 3;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -384,11 +431,11 @@ body.modal-open {
 /* Слайдер: */
 .slider {
   /* Положение элемента устанавливается относительно его исходной позиции: */
+  position: absolute;
   top: 0;
   left: 0;
-  /* Центрируем по горизонтали: */
-  margin: auto;
-  min-height: 580px;
+  width: 100%;
+  height: 100%;
 }
 
 /* Картинка масштабируется по отношению к родительскому элементу: */
@@ -554,7 +601,7 @@ body.modal-open {
 }
 
 .section-services {
-  background-image: url("../images/desktop/service-price.png");
+  background-image: url("../images/desktop/services-prices.png");
   background-color: #111319;
   background-repeat: no-repeat;
   background-size: cover;

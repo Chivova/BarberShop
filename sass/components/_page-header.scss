@@ -1,0 +1,38 @@
+.header-wrap {
+  position: relative;
+  min-height: 680px;
+}
+
+.social-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 680px;
+  height: calc(155px + (100vw - 1280px) / 2);
+  background-color: #fff;
+  transform-origin: top left;
+  transform: translateY(100%) rotate(-90deg);
+  z-index: 1;
+}
+
+.logo {
+  display: inline-block;
+  width: 69px;
+  height: 55px;
+  fill: $title-text-color;
+}
+
+.site-nav {
+  width: 1280px;
+  justify-content: space-between;
+}
+.site-nav-list {
+  @extend %list;
+  display: flex;
+  align-items: center;
+}
+
+.site-nav-item {
+  z-index: 3;
+}
