@@ -5,15 +5,18 @@
 
 .social-block {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 680px;
-  height: calc(155px + (100vw - 1280px) / 2);
   background-color: #fff;
-  transform-origin: top left;
-  transform: translateY(100%) rotate(-90deg);
+  // width: 155px;
+  height: 680px;
+  width: calc(155px + (100vw - 1200px) / 2);
   z-index: 1;
+}
+
+.social-block-list {
+  @extend %list;
+  display: flex;
+  position: absolute;
+  top: calc(80px + (100vw - 1280px) / 2);
 }
 
 .logo {

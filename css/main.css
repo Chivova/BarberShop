@@ -270,7 +270,7 @@ summary {
   display: list-item;
 }
 
-.site-nav-list, .social-link-item, .aboutus-list, .services-prices,
+.social-block-list, .site-nav-list, .social-link-item, .aboutus-list, .services-prices,
 .services-prices2, .features-list, .our-team-list, .social-list, .example-list, .address-list {
   padding: 0;
   margin: 0;
@@ -361,17 +361,18 @@ body.modal-open {
 
 .social-block {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 680px;
-  height: calc(155px + (100vw - 1280px) / 2);
   background-color: #fff;
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-  -webkit-transform: translateY(100%) rotate(-90deg);
-          transform: translateY(100%) rotate(-90deg);
+  height: 680px;
+  width: calc(155px + (100vw - 1200px) / 2);
   z-index: 1;
+}
+
+.social-block-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: calc(80px + (100vw - 1280px) / 2);
 }
 
 .logo {
@@ -444,7 +445,7 @@ body.modal-open {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  min-height: 580px;
+  max-height: 680px;
 }
 
 /* Кнопки назад и вперёд: */
