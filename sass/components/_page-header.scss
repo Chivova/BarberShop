@@ -2,6 +2,9 @@
   position: relative;
   min-height: 680px;
 }
+.page-header {
+  padding-top: 40px;
+}
 
 .social-block {
   position: absolute;
@@ -9,6 +12,8 @@
   // width: 155px;
   height: 680px;
   width: calc(155px + (100vw - 1200px) / 2);
+  top: 0;
+  left: 0;
   z-index: 1;
 }
 
@@ -18,24 +23,77 @@
   position: absolute;
   top: calc(80px + (100vw - 1280px) / 2);
 }
-
+.row {
+  display: flex;
+}
 .logo {
+  position: relative;
+  top: -9px;
+  padding-right: 112px;
   display: inline-block;
-  width: 69px;
-  height: 55px;
-  fill: $title-text-color;
+  z-index: 2;
+  left: 40px;
 }
 
 .site-nav {
-  width: 1280px;
+  width: 1200px;
+  display: flex;
   justify-content: space-between;
+  height: 40px;
 }
 .site-nav-list {
   @extend %list;
   display: flex;
   align-items: center;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+
+  color: $white-text-color;
 }
 
 .site-nav-item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+
   z-index: 3;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.recording-list {
+  @extend %list;
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+
+  z-index: 3;
+}
+
+.recording-item {
+  &:first-child {
+    margin-right: 40px;
+  }
+}
+
+.recording-tel {
+  display: block;
+  text-decoration: none;
+
+  color: $white-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }

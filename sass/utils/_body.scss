@@ -7,6 +7,8 @@ body {
   line-height: 1.89;
   letter-spacing: 0.02em;
 
+  scroll-behavior: smooth;
+  
   &.modal-open {
     overflow: hidden;
   }

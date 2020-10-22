@@ -270,7 +270,7 @@ summary {
   display: list-item;
 }
 
-.social-block-list, .site-nav-list, .social-link-item, .aboutus-list, .services-prices,
+.social-block-list, .site-nav-list, .recording-list, .social-link-item, .aboutus-list, .services-prices,
 .services-prices2, .features-list, .our-team-list, .social-list, .example-list, .address-list {
   padding: 0;
   margin: 0;
@@ -337,6 +337,7 @@ body {
   font-size: 14px;
   line-height: 1.89;
   letter-spacing: 0.02em;
+  scroll-behavior: smooth;
 }
 
 body.modal-open {
@@ -359,11 +360,17 @@ body.modal-open {
   min-height: 680px;
 }
 
+.page-header {
+  padding-top: 40px;
+}
+
 .social-block {
   position: absolute;
   background-color: #fff;
   height: 680px;
   width: calc(155px + (100vw - 1200px) / 2);
+  top: 0;
+  left: 0;
   z-index: 1;
 }
 
@@ -375,18 +382,30 @@ body.modal-open {
   top: calc(80px + (100vw - 1280px) / 2);
 }
 
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .logo {
+  position: relative;
+  top: -9px;
+  padding-right: 112px;
   display: inline-block;
-  width: 69px;
-  height: 55px;
-  fill: #303030;
+  z-index: 2;
+  left: 40px;
 }
 
 .site-nav {
-  width: 1280px;
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 40px;
 }
 
 .site-nav-list {
@@ -396,10 +415,51 @@ body.modal-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
 }
 
 .site-nav-item {
   z-index: 3;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.site-nav-item:hover, .site-nav-item:focus {
+  color: #ff6c00;
+}
+
+.recording-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  z-index: 3;
+}
+
+.recording-item:first-child {
+  margin-right: 40px;
+}
+
+.recording-tel {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.recording-tel:hover, .recording-tel:focus {
+  color: #ff6c00;
 }
 
 .container {
