@@ -283,15 +283,15 @@ summary {
   color: #303030;
 }
 
-.section-subtitle::before {
+.social-block-list::before, .section-subtitle::before, .work-time-title::before {
   content: '';
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   width: 60px;
   height: 1px;
-  margin-right: 40px;
-  color: #303030;
+  margin-right: 20px;
+  background-color: #303030;
 }
 
 .social-link {
@@ -364,6 +364,12 @@ body.modal-open {
   padding-top: 40px;
 }
 
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .social-block {
   position: absolute;
   background-color: #fff;
@@ -379,13 +385,25 @@ body.modal-open {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: calc(80px + (100vw - 1280px) / 2);
+  bottom: calc(80px + (100vw - 1280px) / 2);
+  -webkit-transform: translateX(40px) rotateZ(-90deg);
+          transform: translateX(40px) rotateZ(-90deg);
 }
 
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.social-block-item:first-child {
+  margin-right: 40px;
+}
+
+.social-block-link {
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.social-block-link:hover, .social-block-link:focus {
+  color: #ff6c00;
 }
 
 .logo {
@@ -406,6 +424,7 @@ body.modal-open {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 40px;
+  padding-bottom: 204px;
 }
 
 .site-nav-list {
@@ -460,6 +479,31 @@ body.modal-open {
 
 .recording-tel:hover, .recording-tel:focus {
   color: #ff6c00;
+}
+
+.greeting {
+  position: relative;
+  left: 245px;
+  max-width: 500px;
+  z-index: 4;
+}
+
+.greeting-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: Raleway;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.greeting-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 1.67;
+  color: #9da4bd;
 }
 
 .container {
@@ -577,6 +621,12 @@ body.modal-open {
 .section-subtitle {
   margin-top: 0;
   margin-bottom: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #303030;
   font-weight: 600;
   font-size: 11px;
@@ -587,6 +637,10 @@ body.modal-open {
 
 .section-subtitle.transparent-color {
   color: rgba(157, 164, 189, 0.6);
+}
+
+.section-subtitle.transparent-color::before {
+  background-color: rgba(157, 164, 189, 0.6);
 }
 
 .section-title {
@@ -938,11 +992,21 @@ body.modal-open {
 .work-time-title {
   margin-top: 0;
   margin-bottom: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #ffffff;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.67;
   letter-spacing: 0.1em;
+}
+
+.work-time-title::before {
+  background-color: #ffffff;
 }
 
 .work-time {

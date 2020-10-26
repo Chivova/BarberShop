@@ -4,6 +4,9 @@
 
 .section-subtitle {
   @include marginTopBottom(0, 20px);
+  display: inline-flex;
+  align-items: center;
+
   color: $title-text-color;
 
   font-weight: 600;
@@ -17,6 +20,9 @@
   }
   &.transparent-color {
     color: $transparent-text-color;
+  }
+  &.transparent-color::before {
+    background-color: $transparent-text-color;
   }
 }
 

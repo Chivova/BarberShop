@@ -94,6 +94,8 @@
 
 .work-time-title {
   @include marginTopBottom(0, 20px);
+  display: inline-flex;
+  align-items: center;
 
   color: $white-text-color;
 
@@ -101,6 +103,11 @@
   font-size: 11px;
   line-height: 1.67;
   letter-spacing: 0.1em;
+
+  &::before {
+    @extend %centered-line;
+    background-color: $white-text-color;
+  }
 }
 
 .work-time {
