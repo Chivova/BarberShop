@@ -1,35 +1,59 @@
-.aboutus-list {
+.about-us {
+  display: flex;
+}
+
+.about-us-list {
   @extend %list;
   display: none;
+  margin-right: 64px;
+
+  // @media screen and (min-width: 768px) {
+  //   display: block;
+  // }
 
   @media screen and (min-width: 768px) {
-    display: block;
+    display: flex;
   }
 }
 
-.aboutus-item:first-child {
-  margin-bottom: 30px;
+.about-us-item {
+  @media screen and (man-width: 1999px) {
+    &:first-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:first-child {
+      margin-right: 30px;
+    }
+  }
 }
 
-.aboutus-title {
+.about-us-description {
+  width: 500px;
+}
+
+.about-us-title {
   @include marginTopBottom(0, 20px);
 
   color: $title-text-color;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 1.2;
+  font-size: 42px;
+  line-height: 1.17;
   letter-spacing: 0.05em;
 }
-.aboutus-text {
+.about-us-text {
   @include marginTopBottom(0, 20px);
 
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.67;
 }
 
-.aboutus-paragraph {
+.about-us-paragraph {
   @include marginTopBottom(0, 20px);
+  line-height: 1.86;
 }
 
 .secondary-btn {

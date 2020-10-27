@@ -270,8 +270,7 @@ summary {
   display: list-item;
 }
 
-.social-block-list, .site-nav-list, .recording-list, .social-link-item, .aboutus-list, .services-prices,
-.services-prices2, .features-list, .our-team-list, .social-list, .example-list, .address-list {
+.social-block-list, .site-nav-list, .recording-list, .social-link-item, .about-us-list, .services-prices-left, .services-prices-right, .features-list, .our-team-list, .social-list, .example-list, .address-list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -669,41 +668,63 @@ body.modal-open {
   color: #303030;
 }
 
-.aboutus-list {
+.about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-us-list {
   display: none;
+  margin-right: 64px;
 }
 
 @media screen and (min-width: 768px) {
-  .aboutus-list {
-    display: block;
+  .about-us-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
-.aboutus-item:first-child {
-  margin-bottom: 30px;
+@media screen and (man-width: 1999px) {
+  .about-us-item:first-child {
+    margin-bottom: 30px;
+  }
 }
 
-.aboutus-title {
+@media screen and (min-width: 1200px) {
+  .about-us-item:first-child {
+    margin-right: 30px;
+  }
+}
+
+.about-us-description {
+  width: 500px;
+}
+
+.about-us-title {
   margin-top: 0;
   margin-bottom: 20px;
   color: #303030;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 1.2;
+  font-size: 42px;
+  line-height: 1.17;
   letter-spacing: 0.05em;
 }
 
-.aboutus-text {
+.about-us-text {
   margin-top: 0;
   margin-bottom: 20px;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.67;
 }
 
-.aboutus-paragraph {
+.about-us-paragraph {
   margin-top: 0;
   margin-bottom: 20px;
+  line-height: 1.86;
 }
 
 .secondary-btn {
@@ -736,13 +757,58 @@ body.modal-open {
 
 .serices-prices-wrap {
   margin-top: 0;
-  margin-bottom: 50px;
-  padding: 30px 30px;
+  margin-bottom: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
-.services-prices-item,
+.services-prices-left {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  white-space: nowrap;
+  padding: 40px 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.services-prices-right {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  white-space: nowrap;
+  padding: 40px 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#090b13), to(rgba(9, 11, 19, 0.2)));
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.services-prices-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  max-width: 505px;
+}
+
+.services-prices-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.services-prices2-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  max-width: 505px;
+}
+
 .services-prices2-item:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -756,6 +822,7 @@ body.modal-open {
 }
 
 .border-bottom {
+  padding-right: 6px;
   width: 100%;
   border-bottom: 1px solid #9da4bd;
 }

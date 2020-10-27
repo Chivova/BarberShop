@@ -18,18 +18,49 @@
 }
 
 .serices-prices-wrap {
-  @include marginTopBottom(0, 50px);
-  padding: 30px 30px;
+  @include marginTopBottom(0, 62px);
+  display: flex;
+
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
-.services-prices,
-.services-prices2 {
+.services-prices-left {
   @extend %list;
+  flex-grow: 1;
+  // или
+  // width: 100%;
+
+  white-space: nowrap;
+  padding: 40px 40px;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
-.services-prices-item,
-.services-prices2-item:not(:last-child) {
-  margin-bottom: 20px;
+.services-prices-right {
+  @extend %list;
+  flex-grow: 1;
+  // или
+  // width: 100%;
+
+  white-space: nowrap;
+  padding: 40px 40px;
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.services-prices-item {
+  display: flex;
+  align-items: baseline;
+  max-width: 505px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.services-prices2-item {
+  display: flex;
+  align-items: baseline;
+  max-width: 505px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .services-text,
@@ -42,6 +73,7 @@
 }
 
 .border-bottom {
+  padding-right: 6px;
   width: 100%;
   border-bottom: 1px solid $secondary-text-color;
 }
