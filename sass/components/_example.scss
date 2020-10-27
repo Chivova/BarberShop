@@ -4,13 +4,27 @@
 
 .example-list {
   @extend %list;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-.example-item:not(:last-child) {
-  @include marginTopBottom(0, 30px);
-}
+.example-item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
 
-.img {
-  display: block;
-  width: 100%;
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
+  }
 }

@@ -4,36 +4,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
 
-.section-services-title {
-  @include marginTopBottom(0, 44px);
-
-  color: $white-text-color;
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.2;
-  letter-spacing: 0.05em;
+  text-align: center;
 }
 
 .serices-prices-wrap {
   @include marginTopBottom(0, 62px);
   display: flex;
-
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-}
-.services-prices-left {
-  @extend %list;
-  flex-grow: 1;
-  // или
-  // width: 100%;
-
-  white-space: nowrap;
-  padding: 40px 40px;
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
+.services-prices-left,
 .services-prices-right {
   @extend %list;
   flex-grow: 1;
@@ -41,23 +21,18 @@
   // width: 100%;
 
   white-space: nowrap;
-  padding: 40px 40px;
+  padding: 30px 40px;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.services-prices-right {
   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
-.services-prices-item {
-  display: flex;
-  align-items: baseline;
-  max-width: 505px;
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
-}
-
+.services-prices-item,
 .services-prices2-item {
   display: flex;
   align-items: baseline;
-  max-width: 505px;
   &:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -69,13 +44,20 @@
 
   color: $secondary-text-color;
 
-  line-height: 2.14;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.services-text {
+  padding-right: 6px;
+}
+.prices-text {
+  padding-left: 6px;
 }
 
 .border-bottom {
-  padding-right: 6px;
   width: 100%;
-  border-bottom: 1px solid $secondary-text-color;
+  border-bottom: 1px solid $border-bottom-color;
 }
 
 .primary-btn {

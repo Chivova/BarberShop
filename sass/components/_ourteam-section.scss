@@ -4,10 +4,20 @@
 
 .our-team-list {
   @extend %list;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .our-team-item {
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 .our-team-img {
   display: block;

@@ -270,7 +270,8 @@ summary {
   display: list-item;
 }
 
-.social-block-list, .site-nav-list, .recording-list, .social-link-item, .about-us-list, .services-prices-left, .services-prices-right, .features-list, .our-team-list, .social-list, .example-list, .address-list {
+.social-block-list, .site-nav-list, .recording-list, .social-link-item, .about-us-list, .services-prices-left,
+.services-prices-right, .features-list, .our-team-list, .social-list, .example-list, .address-list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -341,6 +342,12 @@ body {
 
 body.modal-open {
   overflow: hidden;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -617,6 +624,13 @@ body.modal-open {
   padding-bottom: 84px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
 .section-subtitle {
   margin-top: 0;
   margin-bottom: 20px;
@@ -742,17 +756,7 @@ body.modal-open {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.section-services-title {
-  margin-top: 0;
-  margin-bottom: 44px;
-  color: #ffffff;
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.2;
-  letter-spacing: 0.05em;
+  text-align: center;
 }
 
 .serices-prices-wrap {
@@ -761,44 +765,25 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
-.services-prices-left {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  white-space: nowrap;
-  padding: 40px 40px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-}
-
+.services-prices-left,
 .services-prices-right {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   white-space: nowrap;
-  padding: 40px 40px;
+  padding: 30px 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.services-prices-right {
   background: -webkit-gradient(linear, left top, left bottom, from(#090b13), to(rgba(9, 11, 19, 0.2)));
   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
-.services-prices-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  max-width: 505px;
-}
-
-.services-prices-item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
+.services-prices-item,
 .services-prices2-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -806,9 +791,9 @@ body.modal-open {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  max-width: 505px;
 }
 
+.services-prices-item:not(:last-child),
 .services-prices2-item:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -818,13 +803,21 @@ body.modal-open {
   margin-top: 0;
   margin-bottom: 0;
   color: #9da4bd;
-  line-height: 2.14;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.services-text {
+  padding-right: 6px;
+}
+
+.prices-text {
+  padding-left: 6px;
 }
 
 .border-bottom {
-  padding-right: 6px;
   width: 100%;
-  border-bottom: 1px solid #9da4bd;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.12);
 }
 
 .primary-btn:hover, .primary-btn:focus {
@@ -904,8 +897,22 @@ body.modal-open {
   background-color: #f7f7f7;
 }
 
+@media screen and (min-width: 1200px) {
+  .our-team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .our-team-item {
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .our-team-img {
@@ -961,18 +968,49 @@ body.modal-open {
   margin-bottom: 44px;
 }
 
-.example-item:not(:last-child) {
-  margin-top: 0;
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .example-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-.img {
-  display: block;
-  width: 100%;
+@media screen and (max-width: 767px) {
+  .example-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .example-item {
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .example-item {
+    -ms-flex-preferred-size: calc((100% - 4 * 30px) / 4);
+        flex-basis: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
+  }
 }
 
 .page-footer {
   background-color: #191c26;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer-form {
@@ -981,7 +1019,14 @@ body.modal-open {
   max-width: 480px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 480px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    padding: 130px 56px;
+    text-align: left;
+    max-width: 625px;
+  }
 }
 
 .form-group {
@@ -1029,7 +1074,7 @@ body.modal-open {
 
 .footer-address {
   width: 100%;
-  background-image: url("../images/desktop/footer-contact.png");
+  background-image: url("../images/mobile/footer-contact.png");
   background-color: #191c26;
   background-position: center;
   background-repeat: no-repeat;
@@ -1044,6 +1089,16 @@ body.modal-open {
 .footer-address > .section-title {
   margin-top: 0;
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    background-image: url("../images/desktop/footer-contact.png");
+    padding: 130px 100px;
+    text-align: left;
+    max-width: 625px;
+    background-size: contain;
+  }
 }
 
 .address-list {
