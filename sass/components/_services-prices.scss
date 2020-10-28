@@ -28,7 +28,9 @@
 }
 
 .services-prices-right {
-  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  @media screen and (min-width: 1200px) {
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
 }
 
 .services-prices-item,

@@ -192,7 +192,7 @@
       <!-- Features -->
       <section class="section features-section">
         <div class="container features-container">
-          <div class="features-wrap">
+          <div class="content-wrap">
             <h2 class="section-subtitle">СТАРАЯ ТРАДИЦИОННАЯ ШКОЛА</h2>
             <h2 class="features-title">Почему приходят именно к нам?</h2>
             <p class="features-paraghraph">
@@ -437,78 +437,54 @@
 
     <!-- Подвал -->
     <footer class="page-footer">
-      <!-- <div class="footer-wrap"> -->
-      <div class="container">
+      <div class="footer-wrap">
         <form class="footer-form">
           <h2 class="section-title inverse">Онлайн-запись</h2>
-          <div class="form-group">
-            <input
-              class="form-field"
-              type="text"
-              name="user-name"
-              id="name"
-              placeholder="ИМЯ*"
-            />
-            <!-- <label class="form-label" for="name"></label> -->
-          </div>
-          <div class="form-group">
-            <input
-              class="form-field"
-              type="tel"
-              name="tel"
-              id="tel"
-              placeholder="ТЕЛЕФОН*"
-            />
-            <label for="tel" class="form-label"></label>
-          </div>
-          <div class="form-group">
-            <textarea
-              class="form-textarea"
-              name="message"
-              id="message"
-              rows="3"
-              placeholder="СООБЩЕНИЕ"
-            ></textarea>
-          </div>
+          <ul class="form-list">
+            <li class="form-item">
+              <input class="form-field" type="text" name="user-name" id="name" placeholder="ИМЯ*" />
+              <!-- <label class="form-label" for="name"></label> -->
+            </li>
+            <li class="form-item">
+              <input class="form-field" type="tel" name="tel" id="tel" placeholder="ТЕЛЕФОН*" />
+              <label for="tel" class="form-label"></label>
+            </li>
+            <li class="form-item">
+              <textarea class="form-textarea" name="message" id="message" rows="3" placeholder="СООБЩЕНИЕ"></textarea>
+            </li>
+          </ul>
           <button class="primary-btn" type="submit">ОТПРАВИТЬ</button>
         </form>
-        </div>
         <!-- <div class="container"> -->
         <address class="footer-address">
           <h2 class="section-title inverse">Контакты</h2>
           <ul class="address-list">
             <li class="address-item">
-              <a
-                class="contact-link"
-                href="https://goo.gl/maps/WJrv6B9sN2dEzzpS6"
-              >
+              <a class="contact-link" href="https://goo.gl/maps/WJrv6B9sN2dEzzpS6">
                 <svg class="adress-icon" width="16" height="18">
                   <use href="./images/sprite.svg#map"></use>
                 </svg>
-                ул. Васильковая, 7А Киев, 08132</a
-              >
+                ул. Васильковая, 7А Киев, 08132</a>
             </li>
             <li class="address-item">
               <a class="contact-link" href="tel:+380961111111">
                 <svg class="adress-icon" width="16" height="18">
                   <use href="./images/sprite.svg#tel"></use>
                 </svg>
-                +380961111111</a
-              >
+                +380961111111</a>
             </li>
             <li class="address-item">
               <a class="contact-link" href="mailto:barbershop@email.com">
                 <svg class="adress-icon" width="16" height="18">
                   <use href="./images/sprite.svg#mail"></use>
                 </svg>
-                barbershop@email.com</a
-              >
+                barbershop@email.com</a>
             </li>
           </ul>
           <h2 class="work-time-title">ВРЕМЯ РАБОТЫ</h2>
           <p class="work-time">Ежедневно с 9:00 до 22:00</p>
         </address>
-        <!-- </div> -->
+      </div>
     </footer>
     <div class="container">
       <!-- или можно так же назвать footer-seperate (отдельный) -->
