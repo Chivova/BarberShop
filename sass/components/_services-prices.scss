@@ -9,8 +9,10 @@
 }
 
 .serices-prices-wrap {
-  @include marginTopBottom(0, 62px);
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    @include marginTopBottom(0, 62px);
+    display: flex;
+  }
 }
 
 .services-prices-left,

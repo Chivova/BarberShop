@@ -759,12 +759,14 @@ body.modal-open {
   text-align: center;
 }
 
-.serices-prices-wrap {
-  margin-top: 0;
-  margin-bottom: 62px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .serices-prices-wrap {
+    margin-top: 0;
+    margin-bottom: 62px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .services-prices-left,
@@ -824,6 +826,25 @@ body.modal-open {
   background-color: #ff6c00;
 }
 
+@media screen and (min-width: 1200px) {
+  .features-section {
+    padding-left: 150px;
+    padding-right: 125px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
 .features-title {
   margin-top: 0;
   margin-bottom: 20px;
@@ -852,9 +873,15 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .features-list {
+    margin-right: 130px;
+  }
+}
+
 .features-item {
-  padding: 20px 35px;
-  height: 100%;
+  padding: 20px 24px;
+  height: 133px;
   background-color: #f7f7f7;
   text-align: center;
 }
@@ -864,6 +891,21 @@ body.modal-open {
     margin: 15px;
     -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
         flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-item {
+    width: 170px;
+    height: 133px;
+  }
+  .features-item:nth-child(odd) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .features-item:nth-child(even) {
+    position: relative;
+    bottom: -35px;
   }
 }
 
