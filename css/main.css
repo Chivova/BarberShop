@@ -270,8 +270,8 @@ summary {
   display: list-item;
 }
 
-.social-block-list, .site-nav-list, .recording-list, .social-link-item, .about-us-list, .services-prices-left,
-.services-prices-right, .features-list, .our-team-list, .social-list, .example-list, .form-list, .address-list {
+.social-block-list, .site-nav-list, .recording-list, .about-us-list, .services-prices-left,
+.services-prices-right, .features-list, .our-team-list, .social-list, .example-list, .form-list, .address-list, .social-link-list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -283,7 +283,7 @@ summary {
   color: #303030;
 }
 
-.social-block-list::before, .section-subtitle::before, .work-time-title::before {
+.social-block-list::before, .section-subtitle::before, .work-time-title::before, .social-link-list:before {
   content: '';
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -669,17 +669,6 @@ body.modal-open {
 
 .section-title.inverse {
   color: #ffffff;
-}
-
-.social-link-item:before {
-  content: '';
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 60px;
-  height: 1px;
-  margin-right: 40px;
-  color: #303030;
 }
 
 .about-us {
@@ -1208,32 +1197,50 @@ body.modal-open {
   color: #9da4bd;
 }
 
-.footer-address {
-  width: 100%;
+.address-flex-wrap {
   background-image: url("../images/mobile/footer-contact.png");
   background-color: #191c26;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 84px 40px;
   text-align: center;
-  font-style: normal;
   font-size: 18px;
   line-height: 1.67;
 }
 
-.footer-address > .section-title {
-  margin-top: 0;
-  margin-bottom: 40px;
+@media screen and (min-width: 768px) {
+  .address-flex-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address-flex-wrap {
+    padding: 100px 40px;
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-address {
+  .address-flex-wrap {
     background-image: url("../images/desktop/footer-contact.png");
     padding: 130px 100px;
-    text-align: left;
     max-width: 625px;
   }
+}
+
+.address-flex-wrap .footer-address {
+  font-style: normal;
+}
+
+.address-flex-wrap .footer-address > .section-title {
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .address-list {
@@ -1241,9 +1248,20 @@ body.modal-open {
   margin-bottom: 44px;
 }
 
+.address-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .address-item:not(:last-child) {
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+.adress-icon {
+  width: 16px;
+  height: 18px;
 }
 
 .work-time-title {
@@ -1252,9 +1270,6 @@ body.modal-open {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #ffffff;
   font-weight: 600;
   font-size: 11px;
@@ -1263,7 +1278,7 @@ body.modal-open {
 }
 
 .work-time-title::before {
-  background-color: #ffffff;
+  background-color: rgba(157, 164, 189, 0.4);
 }
 
 .work-time {
@@ -1275,12 +1290,35 @@ body.modal-open {
   line-height: 1.67;
 }
 
+@media screen and (min-width: 1200px) {
+  .work-time {
+    text-align: left;
+  }
+}
+
 .footer-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 44px;
-  padding-bottom: 44px;
+  padding: 44px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-bottom {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 56px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-bottom {
+    padding: 59px;
+  }
 }
 
 .copyright {
@@ -1292,5 +1330,28 @@ body.modal-open {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
+}
+
+@media screen and (min-width: 768px) {
+  .copyright {
+    padding-top: 0;
+    margin-right: 0;
+  }
+}
+
+.social-link-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-link-item:first-child {
+  margin-right: 40px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -114,31 +114,40 @@
   color: $secondary-text-color;
 }
 
-.footer-address {
-  width: 100%;
-
+.address-flex-wrap {
   background-image: url('../images/mobile/footer-contact.png');
   background-color: rgba(25, 28, 38, 1);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
-  padding: 84px 40px;
   text-align: center;
-
-  font-style: normal;
   font-size: 18px;
   line-height: 1.67;
 
-  & > .section-title {
-    @include marginTopBottom(0, 40px);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    padding: 100px 40px;
+    text-align: left;
+  }
+
+   @media screen and (min-width: 1200px) {
     background-image: url('../images/desktop/footer-contact.png');
     padding: 130px 100px;
-    text-align: left;
     max-width: 625px;
+  }
+
+  .footer-address {
+    font-style: normal;
+
+    & > .section-title {
+      @include marginTopBottom(0, 40px);
+    }
   }
 }
 
@@ -147,14 +156,20 @@
   @include marginTopBottom(0, 44px);
 }
 
-.address-item:not(:last-child) {
-  @include marginTopBottom(0, 20px);
+.address-item {
+  display: flex;
+  &:not(:last-child) {
+    @include marginTopBottom(0, 20px);
+  }
+}
+.adress-icon {
+  width: 16px;
+  height: 18px;
 }
 
 .work-time-title {
   @include marginTopBottom(0, 20px);
   display: inline-flex;
-  align-items: center;
 
   color: $white-text-color;
 
@@ -165,7 +180,7 @@
 
   &::before {
     @extend %centered-line;
-    background-color: $white-text-color;
+    background-color: $footer-formtext-color;
   }
 }
 
@@ -177,12 +192,25 @@
 
   font-size: 18px;
   line-height: 1.67;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer-bottom {
   display: flex;
-  padding-top: 44px;
-  padding-bottom: 44px;
+  padding: 44px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 59px;
+  }
 }
 
 .copyright {
@@ -195,4 +223,25 @@
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+    margin-right: 0;
+  }
+}
+
+.social-link-list {
+  @extend %list;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:before {
+    @extend %centered-line;
+  }
+}
+
+.social-link-item:first-child {
+  margin-right: 40px;
 }
