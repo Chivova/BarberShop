@@ -277,7 +277,7 @@ summary {
   list-style: none;
 }
 
-.link, .contact-link {
+.link, .contact-link, .footer-social-link {
   display: block;
   text-decoration: none;
   color: #303030;
@@ -530,12 +530,16 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding-left: 39px;
+    padding-right: 39px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    padding-left: 55px;
+    padding-right: 55px;
   }
 }
 
@@ -745,7 +749,25 @@ body.modal-open {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  text-align: center;
+}
+
+.serices-prices-wrap {
+  background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+@media screen and (max-width: 767px) {
+  .serices-prices-wrap {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .serices-prices-wrap {
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding: 30px 40px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -764,9 +786,19 @@ body.modal-open {
       -ms-flex-positive: 1;
           flex-grow: 1;
   white-space: nowrap;
-  padding: 30px 40px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+@media screen and (min-width: 1200px) {
+  .services-prices-left,
+  .services-prices-right {
+    padding: 30px 40px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .services-prices-left {
+    padding-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -813,15 +845,12 @@ body.modal-open {
   border-bottom: 1px solid rgba(157, 164, 189, 0.12);
 }
 
-.primary-btn:hover, .primary-btn:focus {
-  background-color: #ff6c00;
+.services-btn-wrap {
+  text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .features-section {
-    padding-left: 155px;
-    padding-right: 155px;
-  }
+.primary-btn:hover, .primary-btn:focus {
+  background-color: #ff6c00;
 }
 
 @media screen and (min-width: 768px) {
@@ -1407,5 +1436,14 @@ body.modal-open {
 
 .social-link-item:first-child {
   margin-right: 40px;
+}
+
+.footer-social-link {
+  font-size: 11px;
+  line-height: 1.36;
+}
+
+.footer-social-link:hover, .footer-social-link:focus {
+  color: #ff6c00;
 }
 /*# sourceMappingURL=main.css.map */

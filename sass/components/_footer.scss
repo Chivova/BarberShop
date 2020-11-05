@@ -287,6 +287,20 @@
   }
 }
 
-.social-link-item:first-child {
-  margin-right: 40px;
+.social-link-item {
+  &:first-child {
+    margin-right: 40px;
+  }
+}
+
+.footer-social-link {
+  @extend %link;
+
+  font-size: 11px;
+  line-height: 1.36;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }

@@ -4,11 +4,20 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-  text-align: center;
 }
 
 .serices-prices-wrap {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+
+  @media screen and (max-width: 767px) {
+    padding: 30px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    @include marginTopBottom(0, 50px);
+    padding: 30px 40px;
+  }
+
   @media screen and (min-width: 1200px) {
     @include marginTopBottom(0, 62px);
     display: flex;
@@ -23,11 +32,22 @@
   // width: 100%;
 
   white-space: nowrap;
-  padding: 30px 40px;
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+
+  @media screen and (min-width: 1200px) {
+    padding: 30px 40px;
+  }
+}
+
+.services-prices-left {
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 20px;
+  }
 }
 
 .services-prices-right {
+  // @media screen and (min-width: 768px) {
+  //   padding-top: 0;
+  // }
   @media screen and (min-width: 1200px) {
     background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
@@ -64,9 +84,11 @@
   border-bottom: 1px solid $border-bottom-color;
 }
 
+.services-btn-wrap {
+  text-align: center;
+}
 .primary-btn {
   @extend %btn;
-
   &:hover,
   &:focus {
     background-color: $accent-color;
