@@ -1073,13 +1073,6 @@ body.modal-open {
   padding-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
-  .our-team-img {
-    width: 450px;
-    height: 346px;
-  }
-}
-
 .name-title {
   margin-top: 0;
   margin-bottom: 8px;
@@ -1207,8 +1200,7 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .footer-form {
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding: 130px 0;
     margin-right: 40px;
   }
 }
@@ -1334,7 +1326,7 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .address-flex-wrap {
     display: block;
-    width: 625px;
+    min-width: 625px;
     padding: 130px 100px;
     background-image: url("../images/desktop/footer-contact.png");
   }

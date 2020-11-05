@@ -258,10 +258,23 @@
           <h2 class="section-title">Наши мастера</h2>
           <ul class="our-team-list">
             <li class="our-team-item">
-              <img class="our-team-img"
-                src="./images/desktop/470-john.jpg"
-                alt="John Smith Extreme Barber"
-              />
+              <picture>
+                <source srcset="./images/mobile/john.jpg 1x, 
+                                ./images/mobile/john@2x.jpg 2x, 
+                                ./images/mobile/john@3x.jpg 3x " 
+                                media="max-width: 767px">
+                <source srcset="./images/tablet/john.jpg 1x, 
+                                ./images/tablet/john@2x.jpg 2x, 
+                                ./images/tablet/john@3x.jpg 3x "
+                                type="image/jpg"
+                                 media="max-width: 1199px">
+                <source srcset="./images/desktop/john.jpg 1x, 
+                                ./images/desktop/john@2x.jpg 2x, 
+                                ./images/desktop/john@3x.jpg 3x " 
+                                media="min-width: 1200px">
+                <img class="our-team-img" src="./images/tablet/john.jpg " alt="John Smith Our Extreme Barber" />
+              </picture>
+              
               <h3 class="name-title">John Smith</h3>
               <p class="taem-position">Extreme Barber</p>
               <ul class="social-list">
@@ -314,10 +327,18 @@
               </ul>
             </li>
             <li class="our-team-item">
-              <img class="our-team-img"
-                src="./images/desktop/470-michele.jpg"
-                alt="Michele Doe Extreme Barber"
-              />
+              <picture>
+                <source srcset="./images/mobile/michele.jpg 1x, 
+                                ./images/mobile/michele@2x.jpg 2x, 
+                                ./images/mobile/michele@3x.jpg 3x " media="max-width: 767px" >
+                <source srcset="./images/tablet/michele.jpg 1x, 
+                                ./images/tablet/michele@2x.jpg 2x, 
+                                ./images/tablet/michele@3x.jpg 3x " type="image/jpg" media="max-width: 1199px" >
+                <source srcset="./images/desktop/michele.jpg 1x, 
+                                ./images/desktop/michele@2x.jpg 2x, 
+                                ./images/desktop/michele@3x.jpg 3x " media="min-width: 1200px" />
+                <img class="our-team-img" src="./images/tablet/michele.jpg " alt="Michele Doe Our Extreme Barber" >
+              </picture>
               <h3 class="name-title">Michele Doe</h3>
               <p class="taem-position">Extreme Barber</p>
               <ul class="social-list">
@@ -368,10 +389,21 @@
               </ul>
             </li>
             <li class="our-team-item">
-              <img class="our-team-img"
-                src="./images/desktop/470-alan.jpg"
-                alt="Alan Black Extreme Barber"
-              />
+              <picture>
+                <source srcset="./images/mobile/alan.jpg 1x, 
+                                ./images/mobile/alan@2x.jpg 2x, 
+                                ./images/mobile/alan@3x.jpg 3x " 
+                        media="max-width: 767px" >
+                <source srcset="./images/tablet/alan.jpg 1x, 
+                                ./images/tablet/alan@2x.jpg 2x, 
+                                ./images/tablet/alan@3x.jpg 3x " type="image/jpg" 
+                        media="max-width: 1199px" >
+                <source srcset="./images/desktop/alan.jpg 1x, 
+                                ./images/desktop/alan@2x.jpg 2x, 
+                                ./images/desktop/alan@3x.jpg 3x " 
+                        media="min-width: 1200px" />
+                <img class="our-team-img" src="./images/mobile/alan.jpg " alt="Alan Black Our Extreme Barber" >
+              </picture>
               <h3 class="name-title">Alan Black</h3>
               <p class="taem-position">Extreme Barber</p>
               <ul class="social-list">
@@ -489,7 +521,7 @@
               <svg class="adress-icon icon-map" width="24" height="24">
                 <use href="./images/sprite.svg#map"></use>
               </svg>
-              <a class="contact-link" href="https://goo.gl/maps/WJrv6B9sN2dEzzpS6"> ул. Васильковая,<br> 7А Киев, 08132</a>
+              <a class="contact-link" href="https://goo.gl/maps/WJrv6B9sN2dEzzpS6"> ул. Васильковая, 7А <br> Киев, 08132</a>
             </li>
             <li class="address-item">
               <svg class="adress-icon" width="24" height="24">
