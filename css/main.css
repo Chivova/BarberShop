@@ -421,30 +421,61 @@ body.modal-open {
   left: 40px;
 }
 
-.site-nav {
-  width: 1200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 40px;
-  padding-bottom: 204px;
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 768px;
+    padding-bottom: 156px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    width: 1200px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 206px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+  }
 }
 
 .site-nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.1em;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .site-nav-item {
@@ -473,8 +504,31 @@ body.modal-open {
   z-index: 3;
 }
 
-.recording-item:first-child {
-  margin-right: 40px;
+@media screen and (max-width: 1199px) {
+  .recording-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .recording-item:last-child {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .recording-item:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .recording-item:first-child {
+    margin-right: 40px;
+  }
 }
 
 .recording-tel {
