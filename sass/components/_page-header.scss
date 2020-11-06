@@ -8,24 +8,33 @@
 
 .row {
   display: flex;
+  justify-content: space-between;
 }
 
 .social-block {
   position: absolute;
   background-color: #fff;
   // width: 155px;
-  height: 680px;
-  width: calc(155px + (100vw - 1200px) / 2);
   top: 0;
   left: 0;
   z-index: 1;
+
+  @media screen and (min-width: 768px) {
+    height: 680px;
+    width: calc(159px + (100vw - 768px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 680px;
+    width: calc(155px + (100vw - 1200px) / 2);
+  }
 }
 
 .social-block-list {
   @extend %list;
   display: flex;
   position: absolute;
-  bottom: calc(80px + (100vw - 1280px) / 2);
+  bottom: calc(80px + (100vw - 1200px) / 2);
   transform: translateX(40px) rotateZ(-90deg);
 
   &::before {
@@ -50,23 +59,38 @@
   }
 }
 
-.logo {
+.logo,
+.logo-inverse {
   position: relative;
   top: -9px;
-  padding-right: 112px;
+
   display: inline-block;
   z-index: 2;
-  left: 40px;
+
   @media screen and (min-width: 768px) {
-    padding-right: 0;
+    left: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 0;
+    padding-right: 100px;
+  }
+}
+.logo {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.logo-inverse {
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
 .menu {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
-    width: 768px;
+    // justify-content: space-between;
+    // width: 768px;
     padding-bottom: 156px;
   }
   @media screen and (min-width: 1200px) {
@@ -99,11 +123,19 @@
 }
 
 .site-nav-item {
-  &:not(:last-child) {
-    margin-right: 40px;
+  z-index: 3;
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
   }
 
-  z-index: 3;
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
 
   &:hover,
   &:focus {
@@ -111,6 +143,9 @@
   }
 }
 
+.site-nav-link {
+  @include paddingTopBottom(10px, 10px);
+}
 .recording-list {
   @extend %list;
   display: flex;
@@ -160,26 +195,44 @@
 
 .greeting {
   position: relative;
-  left: 245px;
-  max-width: 500px;
-
   z-index: 4;
+  pointer-events: none;
+
+  @media screen and (max-width: 767px) {
+    min-width: 306px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 355px;
+    left: 250px;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 245px;
+    max-width: 500px;
+  }
 }
 
 .greeting-title {
   @include marginTopBottom(0, 20px);
   font-family: Raleway;
-  font-size: 72px;
-  line-height: 1.18;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.17;
   letter-spacing: 0.05em;
-
   color: $white-text-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 72px;
+    line-height: 1.18;
+  }
 }
 
 .greeting-text {
   @include marginTopBottom(0, 0);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.67;
 
   color: $secondary-text-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
 }
