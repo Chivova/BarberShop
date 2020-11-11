@@ -89,7 +89,7 @@
 .menu {
   @media screen and (min-width: 768px) {
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
     // width: 768px;
     padding-bottom: 156px;
   }
@@ -103,6 +103,11 @@
   @media screen and (min-width: 768px) {
     display: flex;
     height: 40px;
+    margin-right: 47px;
+  }
+  @media screen and (min-width: 1200px) {
+    
+    margin-right: 0;
   }
 }
 
@@ -111,7 +116,7 @@
 
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   letter-spacing: 0.1em;
 
   color: $white-text-color;
