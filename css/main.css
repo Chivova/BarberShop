@@ -363,7 +363,7 @@ body.modal-open {
 
 .header-wrap {
   position: relative;
-  min-height: 680px;
+  min-height: 580px;
 }
 
 .page-header {
@@ -379,18 +379,15 @@ body.modal-open {
           justify-content: space-between;
 }
 
-.social-block {
-  position: absolute;
-  background-color: #fff;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
 @media screen and (min-width: 768px) {
   .social-block {
     height: 680px;
     width: calc(159px + (100vw - 768px) / 2);
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
 }
 
@@ -401,14 +398,16 @@ body.modal-open {
   }
 }
 
-.social-block-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  bottom: calc(80px + (100vw - 1200px) / 2);
-  -webkit-transform: translateX(40px) rotateZ(-90deg);
-          transform: translateX(40px) rotateZ(-90deg);
+@media screen and (min-width: 768px) {
+  .social-block-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: calc(80px + (100vw - 1200px) / 2);
+    -webkit-transform: translateX(40px) rotateZ(-90deg);
+            transform: translateX(40px) rotateZ(-90deg);
+  }
 }
 
 .social-block-item:first-child {
@@ -419,8 +418,15 @@ body.modal-open {
   display: block;
   text-decoration: none;
   font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 1.36;
+  color: #303030;
+}
+
+@media screen and (min-width: 768px) {
+  .social-block-link {
+    font-size: 11px;
+  }
 }
 
 .social-block-link:hover, .social-block-link:focus {
@@ -462,8 +468,65 @@ body.modal-open {
   }
 }
 
+.menu-button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 1;
+}
+
 @media screen and (min-width: 768px) {
-  .menu {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-menu {
+  display: none;
+}
+
+.menu-button.is-open .icon-menu {
+  display: block;
+}
+
+.menu-button.is-open .icon-close {
+  display: none;
+}
+
+.icon-close:hover, .icon-close:focus {
+  fill: #ff6c00;
+}
+
+.menu-container {
+  z-index: 5;
+  background-color: #ffffff;
+  -webkit-box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), -2px 0px 4px rgba(0, 0, 0, 0.08), -1px 0px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), -2px 0px 4px rgba(0, 0, 0, 0.08), -1px 0px 3px rgba(0, 0, 0, 0.16);
+}
+
+.menu-container.is-open {
+  display: block;
+  -webkit-transition: display 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: display 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 337px;
+    height: 796px;
+    padding: 118px 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -475,7 +538,7 @@ body.modal-open {
 }
 
 @media screen and (min-width: 1200px) {
-  .menu {
+  .menu-container {
     width: 1200px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -502,10 +565,9 @@ body.modal-open {
 
 .site-nav-list {
   font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.39;
+  color: #303030;
 }
 
 @media screen and (min-width: 768px) {
@@ -516,6 +578,10 @@ body.modal-open {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #ffffff;
   }
 }
 
@@ -545,17 +611,26 @@ body.modal-open {
 }
 
 .recording-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 25px;
   letter-spacing: 0.1em;
   z-index: 3;
+  color: #303030;
+}
+
+@media screen and (min-width: 768px) {
+  .recording-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -588,7 +663,13 @@ body.modal-open {
 .recording-tel {
   display: block;
   text-decoration: none;
-  color: #ffffff;
+  color: #303030;
+}
+
+@media screen and (min-width: 768px) {
+  .recording-tel {
+    color: #ffffff;
+  }
 }
 
 .recording-tel:hover, .recording-tel:focus {
