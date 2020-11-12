@@ -90,10 +90,11 @@
 .services-btn-wrap {
   text-align: center;
 }
-.primary-btn {
-  @extend %btn;
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-  }
-}
+
+// .primary-btn {
+//   @extend %btn;
+//   &:hover,
+//   &:focus {
+//     background-color: $accent-color;
+//   }
+// }

@@ -1,6 +1,12 @@
 .header-wrap {
   position: relative;
-  min-height: 580px;
+
+  @media screen and (max-width: 767px) {
+    min-height: 580px;
+  }
+  @media screen and (min-width: 768px) {
+    min-height: 680px;
+  }
 }
 .page-header {
   padding-top: 40px;
@@ -39,13 +45,32 @@
     transform: translateX(40px) rotateZ(-90deg);
   }
 
-  &::before {
-    @extend %centered-line;
-  }
+  // &::before {
+  //   @extend %centered-line;
+  // }
 }
 
-.social-block-item:first-child {
-  margin-right: 40px;
+.social-block-item {
+  &:first-child {
+    display: flex;
+    align-items: center;
+    &::before {
+      @extend %centered-line;
+      margin-right: 40px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 24px;
+    }
+  }
+  &:last-child {
+    padding-left: 102px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    :first-child {
+      margin-right: 40px;
+    }
+  }
 }
 
 .social-block-link {
@@ -73,7 +98,7 @@
   top: -9px;
 
   display: inline-block;
-  z-index: 2;
+  z-index: 9;
 
   @media screen and (min-width: 768px) {
     left: 8px;
@@ -103,22 +128,22 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 1;
+  z-index: 8;
 
   @media screen and (min-width: 768px) {
     display: none;
   }
 
-  & .icon-menu {
+  &.is-open .icon-menu {
     display: none;
   }
 
-  &.is-open .icon-menu {
-    display: block;
+  & .icon-close {
+    display: none;
   }
 
   &.is-open .icon-close {
-    display: none;
+    display: block;
   }
 }
 
@@ -130,26 +155,31 @@
 }
 
 .menu-container {
+  // display: none;
   z-index: 5;
 
-  background-color: $primary-bg-color;
-
-  box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), -2px 0px 4px rgba(0, 0, 0, 0.08),
-    -1px 0px 3px rgba(0, 0, 0, 0.16);
-
-  &.is-open {
-    display: block;
-    transition: display 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
   @media screen and (max-width: 767px) {
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
     min-width: 337px;
     height: 796px;
     padding: 118px 40px;
-    // transform: translateX(120%);
-    // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: $primary-bg-color;
+    box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04),
+      -2px 0px 4px rgba(0, 0, 0, 0.08), -1px 0px 3px rgba(0, 0, 0, 0.16);
+
+    // transition: display 250ms cubic-bezier(0.4, 0, 0.2, 1) 2000ms 2000ms;
+  }
+
+  &.is-open {
+    @media screen and (max-width: 767px) {
+      display: block;
+      overflow-y: auto;
+    }
+    // transition: display 250ms cubic-bezier(0.4, 0, 0.2, 1) 2000ms 2000ms;
   }
 
   @media screen and (min-width: 768px) {
@@ -157,6 +187,7 @@
     justify-content: space-between;
     // width: 768px;
     padding-bottom: 156px;
+    background-color: transparent;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
@@ -164,12 +195,14 @@
     padding-bottom: 206px;
   }
 }
+
 .site-nav {
   @media screen and (min-width: 768px) {
     display: flex;
     height: 40px;
     margin-right: 47px;
   }
+
   @media screen and (min-width: 1200px) {
     margin-right: 0;
   }
@@ -182,6 +215,10 @@
   line-height: 1.39;
 
   color: $title-text-color;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 64px;
+  }
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -197,6 +234,12 @@
 
 .site-nav-item {
   z-index: 3;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
 
   @media screen and (min-width: 768px) {
     &:not(:last-child) {
@@ -219,6 +262,7 @@
 .site-nav-link {
   @include paddingTopBottom(10px, 10px);
 }
+
 .recording-list {
   @extend %list;
 
@@ -229,6 +273,10 @@
   z-index: 3;
 
   color: $title-text-color;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 64px;
+  }
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -246,17 +294,18 @@
 
 .recording-item {
   @media screen and (max-width: 767px) {
-    &:last-child {
-      margin-bottom: 64px;
+    &:not(:last-child) {
+      margin-bottom: 24px;
     }
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     &:last-child {
       margin-bottom: 20px;
     }
   }
   @media screen and (min-width: 1200px) {
     &:first-child {
+      margin-bottom: 0;
       margin-right: 40px;
     }
   }
@@ -275,6 +324,17 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+}
+
+.primary-btn {
+  @extend %btn;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+  @media screen and (max-width: 767px) {
+    color: $title-text-color;
   }
 }
 
