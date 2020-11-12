@@ -1,5 +1,6 @@
 .header-wrap {
   position: relative;
+  background: rgba(25, 28, 38, 0.2);
 
   @media screen and (max-width: 767px) {
     min-height: 580px;
@@ -10,6 +11,9 @@
 }
 .page-header {
   padding-top: 40px;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 60px;
+  }
 }
 
 .row {
@@ -186,7 +190,7 @@
     display: flex;
     justify-content: space-between;
     // width: 768px;
-    padding-bottom: 156px;
+    padding-bottom: 130px;
     background-color: transparent;
   }
   @media screen and (min-width: 1200px) {
@@ -294,7 +298,7 @@
 
 .recording-item {
   @media screen and (max-width: 767px) {
-    &:not(:last-child) {
+    &:first-child {
       margin-bottom: 24px;
     }
   }
@@ -305,8 +309,10 @@
   }
   @media screen and (min-width: 1200px) {
     &:first-child {
-      margin-bottom: 0;
       margin-right: 40px;
+    }
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
@@ -344,7 +350,7 @@
   pointer-events: none;
 
   @media screen and (max-width: 767px) {
-    min-width: 306px;
+    max-width: 306px;
   }
   @media screen and (min-width: 768px) {
     max-width: 355px;
