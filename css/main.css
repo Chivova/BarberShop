@@ -310,7 +310,7 @@ summary {
   background-color: #ffffff;
 }
 
-.primary-btn, .secondary-btn {
+.primary-btn, .primary-btn-inverse, .secondary-btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -338,6 +338,7 @@ body {
   line-height: 1.89;
   letter-spacing: 0.02em;
   scroll-behavior: smooth;
+  min-width: 320px;
 }
 
 body.modal-open {
@@ -382,12 +383,6 @@ body.modal-open {
   padding-top: 40px;
 }
 
-@media screen and (max-width: 767px) {
-  .page-header {
-    padding-bottom: 60px;
-  }
-}
-
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,22 +392,29 @@ body.modal-open {
           justify-content: space-between;
 }
 
+.social-block {
+  padding-left: 40px;
+}
+
 @media screen and (min-width: 768px) {
   .social-block {
-    height: 680px;
-    width: calc(159px + (100vw - 768px) / 2);
+    width: 680px;
+    height: calc(159px + (100vw - 768px) / 2);
     position: absolute;
-    background-color: #fff;
-    top: 0;
     left: 0;
+    background-color: #fff;
+    bottom: 0;
     z-index: 1;
+    -webkit-transform: translateY(100%) rotate(-90deg);
+            transform: translateY(100%) rotate(-90deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .social-block {
-    height: 680px;
-    width: calc(155px + (100vw - 1200px) / 2);
+    height: calc(155px + (100vw - 1200px) / 2);
   }
 }
 
@@ -422,9 +424,13 @@ body.modal-open {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    bottom: calc(80px + (100vw - 1200px) / 2);
-    -webkit-transform: translateX(40px) rotateZ(-90deg);
-            transform: translateX(40px) rotateZ(-90deg);
+    top: calc(76px + (100vw - 768px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-block-list {
+    top: calc(75px + (100vw - 1200px) / 2);
   }
 }
 
@@ -447,13 +453,15 @@ body.modal-open {
   }
 }
 
-.social-block-item:last-child {
-  padding-left: 102px;
+@media screen and (min-width: 768px) {
+  .social-block-item:first-child {
+    margin-right: 40px;
+  }
 }
 
-@media screen and (min-width: 1200px) {
-  .social-block-item :first-child {
-    margin-right: 40px;
+@media screen and (max-width: 767px) {
+  .social-block-item:last-child {
+    padding-left: 102px;
   }
 }
 
@@ -639,6 +647,7 @@ body.modal-open {
 
 .site-nav-item {
   z-index: 3;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
@@ -743,13 +752,20 @@ body.modal-open {
   color: #ff6c00;
 }
 
+.primary-btn {
+  color: #ffffff;
+}
+
 .primary-btn:hover, .primary-btn:focus {
   background-color: #ff6c00;
 }
 
 @media screen and (max-width: 767px) {
-  .primary-btn {
+  .primary-btn-inverse {
     color: #303030;
+  }
+  .primary-btn-inverse:hover, .primary-btn-inverse:focus {
+    background-color: #ff6c00;
   }
 }
 
@@ -762,6 +778,7 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .greeting {
     max-width: 306px;
+    top: 100px;
   }
 }
 
@@ -858,13 +875,17 @@ body.modal-open {
   }
 }
 
+.slider .item {
+  height: inherit;
+}
+
 /* Картинка масштабируется по отношению к родительскому элементу: */
 .slider .item img {
   /* Элемент меняет размер так, чтобы заполнить блок и сохранить пропорции: */
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  max-height: 680px;
+  height: 100%;
 }
 
 /* Кнопки назад и вперёд: */
@@ -892,7 +913,7 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .slider .previous,
   .slider .next {
-    top: 80%;
+    top: 90%;
     right: 20%;
   }
 }
@@ -1147,7 +1168,13 @@ body.modal-open {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  white-space: nowrap;
+}
+
+@media screen and (min-width: 425px) {
+  .services-prices-left,
+  .services-prices-right {
+    white-space: nowrap;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1741,11 +1768,16 @@ body.modal-open {
 }
 
 .footer-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-top: 44px;
   padding-bottom: 44px;
+}
+
+@media screen and (min-width: 321px) {
+  .footer-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 768px) {

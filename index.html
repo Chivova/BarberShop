@@ -49,7 +49,7 @@
               <a class="recording-tel" href="tel:+38 0441111111">+38 044 111 11 11</a>
             </li>
             <li class="recording-item">
-              <button class="primary-btn ">онлайн-запись</button>
+              <button class="primary-btn primary-btn-inverse  ">онлайн-запись</button>
             </li>
           </ul>
           <div class="social-block">
@@ -81,26 +81,26 @@
     <div class="slider">
       <div class="item">
         <picture>
-          <source srcset="./images/mobile/slider1.jpg" media="(max-width:767px)">
-          <source srcset="./images/tablet/slider1.jpg" media="(max-width:1199px)">
-          <source srcset="./images/desktop/slider1.jpg" media="(min-width:1200px)">
+          <source srcset="./images/mobile/slider1.jpg 1x, ./images/mobile/slider1@2x.jpg 2x" media="(max-width:767px)">
+          <source srcset="./images/tablet/slider1.jpg 1x, ./images/tablet/slider1@2x.jpg 2x" media="(max-width:1199px)">
+          <source srcset="./images/desktop/slider1.jpg 1x, ./images/desktop/slider1@2x.jpg 2x" media="(min-width:1200px)">
           <img src="./images/desktop/slider1.jpg" alt="слайд">
         </picture>
       </div>
       <div class="item">
         <picture>
-          <source srcset="./images/mobile/slider2.jpg" media="(max-width:767px)">
-          <source srcset="./images/tablet/slider2.jpg" media="(max-width:1199px)">
-          <source srcset="./images/desktop/slider2.jpg" media="(min-width:1200px)">
+          <source srcset="./images/mobile/slider2.jpg 1x, ./images/mobile/slider2@2x.jpg 2x" media="(max-width:767px)">
+          <source srcset="./images/tablet/slider2.jpg 1x, ./images/tablet/slider2@2x.jpg 2x" media="(max-width:1199px)">
+          <source srcset="./images/desktop/slider2.jpg 1x, ./images/desktop/slider2@2x.jpg 2x" media="(min-width:1200px)">
           <img src="./images/mobile/slider2.jpg" alt="Второй слайд">
         </picture>
       </div>
     
       <div class="item">
         <picture>
-          <source srcset="./images/mobile/slider3.jpg" media="(max-width:767px)">
-          <source srcset="./images/tablet/slider3.jpg" media="(max-width:1199px)">
-          <source srcset="./images/desktop/slider3.jpg" media="(min-width:1200px)">
+          <source srcset="./images/mobile/slider3.jpg 1x, ./images/mobile/slider3@2x.jpg 2x" media="(max-width:767px)">
+          <source srcset="./images/tablet/slider3.jpg 1x, ./images/tablet/slider3@2x.jpg 2x" media="(max-width:1199px)">
+          <source srcset="./images/desktop/slider3.jpg 1x, ./images/desktop/slider3@2x.jpg 2x" media="(min-width:1200px)">
           <img src="./images/mobile/slider3.jpg" alt="Третий слайд">
         </picture>
       </div>
@@ -276,16 +276,16 @@
             <li class="our-team-item">
               <picture>
                 <source srcset="./images/mobile/john.jpg 1x, 
-                                ./images/mobile/john@2x.jpg 2x, 
-                                ./images/mobile/john@3x.jpg 3x " 
-                                media="max-width: 767px">
+                        ./images/mobile/john@2x.jpg 2x, 
+                        ./images/mobile/john@3x.jpg 3x "
+                         media="max-width: 767px">
                 <source srcset="./images/tablet/john.jpg 1x, 
-                                ./images/tablet/john@2x.jpg 2x, 
-                                ./images/tablet/john@3x.jpg 3x "
-                                 media="max-width: 1199px">
-                <source srcset="./images/desktop/john.jpg 1x, 
-                                ./images/desktop/john@2x.jpg 2x, 
-                                ./images/desktop/john@3x.jpg 3x " 
+                        ./images/tablet/john@2x.jpg 2x, 
+                        ./images/tablet/john@3x.jpg 3x "
+                 media="(max-width:1199px)">
+                <source srcset="./images/tablet/john.jpg 1x, 
+                        ./images/desktop/john@2x.jpg 2x, 
+                        ./images/desktop/john@3x.jpg 3x " 
                                 media="min-width: 1200px">
                 <img class="our-team-img" src="./images/tablet/john.jpg " alt="John Smith Our Extreme Barber" />
               </picture>
@@ -561,9 +561,11 @@
         </div>
       </div>
     </footer>
-    <div class="container">
-      <!-- или можно так же назвать footer-seperate (отдельный) -->
-      <div class="footer-bottom">
+    
+      <div class="footer-bottom container">
+        <!-- или можно так же назвать footer-seperate (отдельный) -->
+        <!-- <div class="container"> -->
+         
         <p class="copyright">&copy Copyright 2020</p>
         <ul class="social-link-list">
           <li class="social-link-item">

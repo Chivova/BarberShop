@@ -31,8 +31,9 @@
   // или
   // width: 100%;
 
-  white-space: nowrap;
-
+  @media screen and (min-width: 425px) {
+    white-space: nowrap;
+  }
   @media screen and (min-width: 1200px) {
     padding: 30px 40px;
   }

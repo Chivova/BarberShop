@@ -238,10 +238,12 @@
 }
 
 .footer-bottom {
-  display: flex;
   padding-top: 44px;
   padding-bottom: 44px;
 
+  @media screen and (min-width: 321px) {
+    display: flex;
+  }
   @media screen and (min-width: 768px) {
     justify-content: space-between;
     align-items: center;
