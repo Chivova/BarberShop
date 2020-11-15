@@ -24,7 +24,7 @@
           <img class="logo-inverse" src="./images/logo-inverse.svg" alt="Логотип Барбершопа">
         </a>
         <button type="button"
-            class="menu-button is-hidden"
+            class="menu-button "
             aria-controls="menu-container"
             data-menu-button>
           <svg 
@@ -35,13 +35,22 @@
           <use class="icon-close" href="./images/sprite.svg#close"></use>
         </svg>
       </button>
-        <div class="menu-container is-hidden" id="menu-container" data-menu>
+        <div class="menu-container" id="menu-container" data-menu>
           <nav class="site-nav">
             <ul class="site-nav-list">
-              <li class="site-nav-item"><a class="site-nav-link" href=""></a>О нас</li>
-              <li class="site-nav-item"><a class="site-nav-link" href=""></a>Услуги и цены</li>
-              <li class="site-nav-item"><a class="site-nav-link" href=""></a>Мастера</li>
-              <li class="site-nav-item"><a class="site-nav-link" href=""></a>Контакты</li>
+              <li class="site-nav-item">
+                <!-- data-site-nav прописано в js что бы моб меню убиралось при нажитии на ссылку -->
+                <a class="site-nav-link" href="#about-us" data-site-nav>О нас</a>
+              </li>
+              <li class="site-nav-item">
+                <a class="site-nav-link" href="#services" data-site-nav>Услуги и цены</a>
+              </li>
+              <li class="site-nav-item">
+                <a class="site-nav-link" href="#our-team" data-site-nav>Мастера</a>
+              </li>
+              <li class="site-nav-item">
+                <a class="site-nav-link" href="#contacts" data-site-nav>Контакты</a>
+              </li>
             </ul>
           </nav>
           <ul class="recording-list">
@@ -49,7 +58,8 @@
               <a class="recording-tel" href="tel:+38 0441111111">+38 044 111 11 11</a>
             </li>
             <li class="recording-item">
-              <button class="primary-btn primary-btn-inverse  ">онлайн-запись</button>
+              <a class="primary-btn primary-btn-inverse" href="#form">онлайн-запись</a>
+              <!-- <button  class="primary-btn primary-btn-inverse">онлайн-запись</button> -->
             </li>
           </ul>
           <div class="social-block">
@@ -117,7 +127,7 @@
   </div>
     <main>
       <!-- О Нас -->
-      <section class="section">
+      <section class="section" id="about-us">
         <div class="container about-us">
           <ul class="about-us-list">
             <li class="about-us-item">
@@ -153,7 +163,7 @@
           </ul>
           <div class="about-us-description">
             <h2 class="section-subtitle">о нас</h2>
-            <h2 class="about-us-title">Лучший Барбершоп твоего города</h2>
+            <h2 class="about-us-title" >Лучший Барбершоп твоего города</h2>
             <p class="about-us-text">
               Если ты хочешь добавить в свой образ больше уверенности – тебе точно
               к нам.
@@ -172,7 +182,7 @@
 
       <!-- services and prices -->
       <!-- Услуги и цены -->
-      <section class="section section-services">
+      <section class="section section-services" id="services">
         <div class="container">
           <h2 class="section-subtitle transparent-color">
             Проведи время в компании лучших мастеров
@@ -268,7 +278,7 @@
       </section>
 
       <!-- Наши Мастера -->
-      <section class="section our-team-section">
+      <section class="section our-team-section" id="our-team">
         <div class="container">
           <h2 class="section-subtitle">ДЛЯ НАСТОЯЩИХ ЦЕНИТЕЛЕЙ АТМОСФЕРЫ</h2>
           <h2 class="section-title">Наши мастера</h2>
@@ -511,7 +521,7 @@
     <!-- Подвал -->
     <footer class="page-footer">
       <div class="footer-wrap">
-        <form class="footer-form">
+        <form class="footer-form" id="form">
           <h2 class="section-title inverse">Онлайн-запись</h2>
           <ul class="form-list">
             <li class="form-item">
@@ -530,7 +540,7 @@
         </form>
         <div class="address-flex-wrap">
         <!-- <div class="adress"> -->
-          <address class="footer-address">
+          <address class="footer-address" id="contacts">
             <h2 class="section-title inverse">Контакты</h2>
             <ul class="address-list">
               <li class="address-item">
@@ -591,5 +601,6 @@
     <script src="./js/slider.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/scroll.js"></script>
   </body>
 </html>

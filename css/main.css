@@ -277,7 +277,7 @@ summary {
   list-style: none;
 }
 
-.link, .contact-link, .footer-social-link {
+.site-nav-link, .link, .contact-link, .footer-social-link {
   display: block;
   text-decoration: none;
   color: #303030;
@@ -327,6 +327,7 @@ summary {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -617,13 +618,6 @@ body.modal-open {
   }
 }
 
-.site-nav-list {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.39;
-  color: #303030;
-}
-
 @media screen and (max-width: 767px) {
   .site-nav-list {
     margin-bottom: 64px;
@@ -638,10 +632,6 @@ body.modal-open {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.1em;
-    color: #ffffff;
   }
 }
 
@@ -675,6 +665,25 @@ body.modal-open {
 .site-nav-link {
   padding-top: 10px;
   padding-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  color: #303030;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+  }
 }
 
 .recording-list {

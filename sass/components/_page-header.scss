@@ -222,11 +222,6 @@
 
 .site-nav-list {
   @extend %list;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.39;
-
-  color: $title-text-color;
 
   @media screen and (max-width: 767px) {
     margin-bottom: 64px;
@@ -235,12 +230,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.1em;
-
-    color: $white-text-color;
   }
 }
 
@@ -274,6 +263,24 @@
 
 .site-nav-link {
   @include paddingTopBottom(10px, 10px);
+  @extend %link;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+
+  color: $title-text-color;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+
+    color: $white-text-color;
+  }
 }
 
 .recording-list {
