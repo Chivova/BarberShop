@@ -127,7 +127,7 @@
               <span class="slider-dots_item" onclick="currentSlide(3)"></span>
             </div> -->
   </div>
-  <button onclick="topFunction()" id="myBtn" title="Наверх"></button>
+  <button onclick="topFunction()" id="myBtn" title="Наверх" aria-label="кнопка вернуться вверх страницы"></button>
   
     <main>
       <!-- О Нас -->
@@ -494,28 +494,60 @@
           </h2>
           <ul class="example-list">
             <li class="example-item">
-              <img class="img"
-                src="./images/desktop/example1.jpg"
-                alt="Пример нашей работы №1"
-              />
+                <picture>
+                  <source srcset="./images/mobile/example1.jpg 1x, 
+                                  ./images/mobile/example1@2x.jpg 2x, 
+                                  ./images/mobile/example1@3x.jpg 3x " media="(max-width:767px)">
+                  <source srcset="./images/tablet/example1.jpg 1x, 
+                                  ./images/tablet/example1@2x.jpg 2x, 
+                                  ./images/tablet/example1@3x.jpg 3x " media="(min-width:768px)">
+                  <source srcset="./images/desktop/example1.jpg 1x, 
+                                  ./images/desktop/example1@2x.jpg 2x, 
+                                  ./images/desktop/example1@3x.jpg 3x " media="(min-width:1200px)">
+                  <img class="img" src="./images/tablet/example1.jpg"  alt="Пример нашей работы №1"/>
+                </picture>
             </li>
             <li class="example-item">
-              <img class="img"
-                src="./images/desktop/example2.jpg"
-                alt="Пример нашей работы №2"
-              />
+              <picture>
+                <source srcset="./images/mobile/example2.jpg 1x, 
+                                ./images/mobile/example2@2x.jpg 2x, 
+                                ./images/mobile/example2@3x.jpg 3x " media="(max-width:767px)">
+                <source srcset="./images/tablet/example2.jpg 1x, 
+                                ./images/tablet/example2@2x.jpg 2x, 
+                                ./images/tablet/example2@3x.jpg 3x " media="(min-width:768px)">
+                <source srcset="./images/desktop/example1.jpg 1x, 
+                                ./images/desktop/exampl21@2x.jpg 2x, 
+                                ./images/desktop/example2@3x.jpg 3x " media="(min-width:1200px)">
+                <img class="img" src="./images/tablet/example2.jpg" alt="Пример нашей работы №2" />
+              </picture>
             </li>
             <li class="example-item">
-              <img class="img"
-                src="./images/desktop/example3.jpg"
-                alt="Пример нашей работы №3"
-              />
+              <picture>
+                <source srcset="./images/mobile/example3.jpg 1x, 
+                                                ./images/mobile/example3@2x.jpg 2x, 
+                                                ./images/mobile/example3@3x.jpg 3x " media="(max-width:767px)">
+                <source srcset="./images/tablet/example3.jpg 1x, 
+                                                ./images/tablet/example3@2x.jpg 2x, 
+                                                ./images/tablet/example3@3x.jpg 3x " media="(min-width:768px)">
+                <source srcset="./images/desktop/example3.jpg 1x, 
+                                                ./images/desktop/example3@2x.jpg 2x, 
+                                                ./images/desktop/example3@3x.jpg 3x " media="(min-width:1200px)">
+                <img class="img" src="./images/desktop/example3.jpg" alt="Пример нашей работы №3" />
+              </picture>
             </li>
             <li class="example-item">
-              <img class="img"
-                src="./images/desktop/example4.jpg"
-                alt="Пример нашей работы №4"
-              />
+            <picture>
+              <source srcset="./images/mobile/example4.jpg 1x, 
+                                              ./images/mobile/example4@2x.jpg 2x, 
+                                              ./images/mobile/example4@3x.jpg 3x " media="(max-width:767px)">
+              <source srcset="./images/tablet/example4.jpg 1x, 
+                                              ./images/tablet/example4@2x.jpg 2x, 
+                                              ./images/tablet/example4@3x.jpg 3x " media="(min-width:768px)">
+              <source srcset="./images/desktop/example4.jpg 1x, 
+                                              ./images/desktop/example4@2x.jpg 2x, 
+                                              ./images/desktop/example4@3x.jpg 3x " media="(min-width:1200px)">
+              <img class="img" src="./images/desktop/example4.jpg" alt="Пример нашей работы №4" />
+            </picture.>
             </li>
           </ul>
         </div>
