@@ -21,7 +21,7 @@
   <div class="header-wrap">
     <header class="page-header">
       <div class="container row">
-        <a href="/">
+        <a class="logo-link" href="/">
           <img class="logo" src="./images/logo.svg" alt="Логотип Барбершопа">
           <img class="logo-inverse" src="./images/logo-inverse.svg" alt="Логотип Барбершопа">
         </a>
@@ -289,18 +289,17 @@
           <ul class="our-team-list">
             <li class="our-team-item">
 
-              <!-- <img class="img" srcset="
+              <!-- <img class="our-team-img"srcset="
                                                 ./images/mobile/john.jpg     320w,
                                                 ./images/tablet/john@2x.jpg  768w,
                                                 ./images/desktop/john@3x.jpg 1200w
-                                              " sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                                              " sizes="(min-width: 1200px) 33.33vw, (max-width: 1199px) 100vw"
                 src="./images/desktop/john.jpg" alt="John Smith Наш Extreme Barber"> -->
-
               <picture>
                 <source srcset="./images/mobile/john.jpg 1x, 
                         ./images/mobile/john@2x.jpg 2x, 
                         ./images/mobile/john@3x.jpg 3x "
-                         media="max-width: 767px">
+                         media="(max-width: 767px)">
                 <source srcset="./images/tablet/john.jpg 1x, 
                         ./images/tablet/john@2x.jpg 2x, 
                         ./images/tablet/john@3x.jpg 3x "
@@ -308,7 +307,7 @@
                 <source srcset="./images/desktop/john.jpg 1x, 
                         ./images/desktop/john@2x.jpg 2x, 
                         ./images/desktop/john@3x.jpg 3x " 
-                                media="min-width: 1200px">
+                                media="(min-width: 1200px)">
                 <img class="our-team-img" src="./images/desktop/john.jpg" alt="John Smith Наш Extreme Barber" />
               </picture>
               
@@ -365,16 +364,16 @@
             </li>
             <li class="our-team-item">
               <picture>
-                <source srcset="./images/mobile/michele.jpg 1x, 
-                                ./images/mobile/michele@2x.jpg 2x, 
-                                ./images/mobile/michele@3x.jpg 3x " media="max-width: 767px" >
-                <source srcset="./images/tablet/michele.jpg 1x, 
-                                ./images/tablet/michele@2x.jpg 2x, 
-                                ./images/tablet/michele@3x.jpg 3x " type="image/jpg" media="max-width: 1199px" >
-                <source srcset="./images/desktop/michele.jpg 1x, 
-                                ./images/desktop/michele@2x.jpg 2x, 
-                                ./images/desktop/michele@3x.jpg 3x " media="min-width: 1200px" />
-                <img class="our-team-img" src="./images/desktop/michele.jpg " alt="Michele Doe Наш Extreme Barber" >
+              <source srcset="./images/mobile/michele.jpg 1x, 
+                                      ./images/mobile/michele@2x.jpg 2x, 
+                                      ./images/mobile/michele@3x.jpg 3x " media="(max-width: 767px)">
+              <source srcset="./images/tablet/michele.jpg 1x, 
+                                      ./images/tablet/michele@2x.jpg 2x, 
+                                      ./images/tablet/michele@3x.jpg 3x " media="(max-width:1199px)">
+              <source srcset="./images/desktop/michele.jpg 1x, 
+                                      ./images/desktop/michele@2x.jpg 2x, 
+                                      ./images/desktop/michele@3x.jpg 3x " media="(min-width: 1200px)">
+              <img class="our-team-img" src="./images/desktop/michele.jpg" alt="Michele Doe Наш Extreme Barber" />
               </picture>
               <h3 class="name-title">Michele Doe</h3>
               <p class="taem-position">Extreme Barber</p>
@@ -428,18 +427,15 @@
             <li class="our-team-item">
               <picture>
                 <source srcset="./images/mobile/alan.jpg 1x, 
-                                ./images/mobile/alan@2x.jpg 2x, 
-                                ./images/mobile/alan@3x.jpg 3x " 
-                        media="max-width: 767px" >
+                                              ./images/mobile/alan@2x.jpg 2x, 
+                                              ./images/mobile/alan@3x.jpg 3x " media="(max-width: 767px)">
                 <source srcset="./images/tablet/alan.jpg 1x, 
-                                ./images/tablet/alan@2x.jpg 2x, 
-                                ./images/tablet/alan@3x.jpg 3x"
-                        media="max-width: 1199px" >
+                                              ./images/tablet/alan@2x.jpg 2x, 
+                                              ./images/tablet/alan@3x.jpg 3x" media="(max-width: 1199px)">
                 <source srcset="./images/desktop/alan.jpg 1x, 
-                                ./images/desktop/alan@2x.jpg 2x, 
-                                ./images/desktop/alan@3x.jpg 3x " 
-                        media="min-width: 1200px" />
-                <img class="our-team-img" src="./images/desktop/alan.jpg " alt="Alan Black Наш Extreme Barber" >
+                                              ./images/desktop/alan@2x.jpg 2x, 
+                                              ./images/desktop/alan@3x.jpg 3x " media="(min-width: 1200px)" />
+                <img class="our-team-img" src="./images/tablet/alan.jpg " alt="Alan Black Наш Extreme Barber">
               </picture>
               <h3 class="name-title">Alan Black</h3>
               <p class="taem-position">Extreme Barber</p>

@@ -104,6 +104,10 @@
   }
 }
 
+.logo-link {
+  width: 75px;
+  height: 55px;
+}
 .logo,
 .logo-inverse {
   position: relative;
@@ -116,8 +120,7 @@
     left: 8px;
   }
   @media screen and (min-width: 1200px) {
-    left: 0;
-    padding-right: 100px;
+    left: 40px;
   }
 }
 .logo {
@@ -196,15 +199,19 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
     // width: 768px;
     padding-bottom: 130px;
+
+    justify-content: space-between;
+
     background-color: transparent;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
-    align-items: center;
+    margin-left: 130px;
     padding-bottom: 206px;
+
+    align-items: center;
   }
 }
 

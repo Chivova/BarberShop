@@ -485,6 +485,11 @@ img {
   color: #ff6c00;
 }
 
+.logo-link {
+  width: 75px;
+  height: 55px;
+}
+
 .logo,
 .logo-inverse {
   position: relative;
@@ -503,8 +508,7 @@ img {
 @media screen and (min-width: 1200px) {
   .logo,
   .logo-inverse {
-    left: 0;
-    padding-right: 100px;
+    left: 40px;
   }
 }
 
@@ -584,10 +588,10 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-bottom: 130px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-bottom: 130px;
     background-color: transparent;
   }
 }
@@ -595,10 +599,11 @@ img {
 @media screen and (min-width: 1200px) {
   .menu-container {
     width: 1200px;
+    margin-left: 130px;
+    padding-bottom: 206px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-bottom: 206px;
   }
 }
 
@@ -879,8 +884,8 @@ img {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (min-width: 480px) {
@@ -901,7 +906,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1280px;
     padding-left: 55px;
     padding-right: 55px;
   }
@@ -1462,9 +1467,14 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
   padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+  .our-team-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .name-title {
