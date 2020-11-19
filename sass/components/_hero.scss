@@ -1,0 +1,88 @@
+.main-container-wrap {
+  position: relative;
+  background: rgba(25, 28, 38, 0.2);
+
+  @media screen and (max-width: 767px) {
+    min-height: 580px;
+  }
+  @media screen and (min-width: 768px) {
+    min-height: 680px;
+  }
+}
+
+.greeting {
+  position: relative;
+  z-index: 4;
+  pointer-events: none;
+
+  @media screen and (max-width: 767px) {
+    max-width: 306px;
+    top: 100px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 355px;
+    left: 250px;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 245px;
+    max-width: 500px;
+  }
+}
+
+.greeting-title {
+  @include marginTopBottom(0, 20px);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: $white-text-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 72px;
+    line-height: 1.18;
+  }
+}
+
+.greeting-text {
+  @include marginTopBottom(0, 0);
+  font-size: 16px;
+  line-height: 1.67;
+
+  color: $secondary-text-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
+
+// Кнопка On Top
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 3px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: transparent;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0; /* Some padding */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 20px; /* Increase font size */
+
+  &::after {
+    content: '\f0aa';
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    // line-height: 50px;
+    color: $secondary-text-color;
+  }
+
+  // что бы навесить hover на after
+  &:hover::after {
+    color: $accent-color;
+  }
+}

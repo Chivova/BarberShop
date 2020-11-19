@@ -1,10 +1,56 @@
 .section-services {
-  background-image: url('../images/desktop/services-prices.png');
   background-color: rgba(17, 19, 25, 1);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (max-width: 767px) {
+    background-image: url('../images/mobile/services-prices.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../images/mobile/services-prices@2x.png');
+    }
+    @media (min-resolution: 3dppx) {
+      background-image: url('../images/mobile/services-prices@3x.png');
+    }
+  }
+  @media (max-width: 1279px) {
+    background-image: url('../images/tablet/services-prices.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../images/tablet/services-prices@2x.png');
+    }
+    @media (min-resolution: 3dppx) {
+      background-image: url('../images/tablet/services-prices@3x.png');
+    }
+  }
+  @media (min-width: 1280px) {
+    background-image: url('../images/desktop/services-prices.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/services-prices@2x.png');
+    }
+    @media (min-resolution: 3dppx) {
+      background-image: url('../images/desktop/services-prices@3x.png');
+    }
+  }
 }
+// @media (max-width: 767px) {
+//   .section-services {
+//     background-image: url('../images/mobile/services-prices.png');
+//   }
+
+//   @media (min-resolution: 2dppx) {
+//     .section-services {
+//       background-image: url('../images/mobile/services-prices@2x.png');
+//     }
+//   }
+//   @media (min-resolution: 3dppx) {
+//     .section-services {
+//       background-image: url('../images/mobile/services-prices@3x.png');
+//     }
+//   }
+// }
 
 .serices-prices-wrap {
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);

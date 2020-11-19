@@ -2,6 +2,14 @@
   background-color: $secondary-bg-color;
 }
 
+.our-team-text {
+  @media screen and (min-width: 768px) {
+    margin-left: 117px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+  }
+}
 .our-team-list {
   @extend %list;
 
@@ -26,10 +34,6 @@
   }
 }
 .our-team-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-
   padding-bottom: 30px;
   @media screen and (max-width: 1199px) {
     margin-left: auto;
