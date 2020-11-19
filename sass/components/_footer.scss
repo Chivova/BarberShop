@@ -63,9 +63,11 @@
   width: 100%;
   border: none;
   border-bottom: 1px solid $footer-formtext-color;
-  background-color: transparent;
 
+  background-color: transparent;
   color: $footer-formtext-color;
+
+  transition: border-bottom 250ms cubic-bezier(0.42, 0, 1, 1) 250ms;
 
   font-weight: 600;
   font-size: 11px;
@@ -95,6 +97,7 @@
 
   color: $footer-formtext-color;
   background-color: transparent;
+  transition: border-bottom 250ms cubic-bezier(0.42, 0, 1, 1) 250ms;
 
   font-weight: 600;
   font-size: 11px;
@@ -309,6 +312,7 @@
 
 .footer-social-link {
   @extend %link;
+  @extend %transition;
 
   font-size: 11px;
   line-height: 1.36;

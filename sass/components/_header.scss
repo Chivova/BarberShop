@@ -77,6 +77,8 @@
 
   color: $title-text-color;
 
+  @extend %transition;
+
   @media screen and (min-width: 768px) {
     font-size: 11px;
   }
@@ -256,6 +258,8 @@
 
   color: $title-text-color;
 
+  @extend %transition;
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -328,6 +332,8 @@
 
   color: $title-text-color;
 
+  @extend %transition;
+
   @media screen and (min-width: 768px) {
     color: $white-text-color;
   }
@@ -342,6 +348,8 @@
   @extend %btn;
 
   color: $white-text-color;
+  transition: background-color 250ms cubic-bezier(0.42, 0, 1, 1);
+
   &:hover,
   &:focus {
     background-color: $accent-color;
