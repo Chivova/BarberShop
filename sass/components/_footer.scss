@@ -63,6 +63,8 @@
   width: 100%;
   border: none;
   border-bottom: 1px solid $footer-formtext-color;
+  padding-bottom: 8px;
+  padding-top: 8px;
 
   background-color: transparent;
   color: $footer-formtext-color;
@@ -85,7 +87,17 @@
   &:hover,
   &:focus {
     border-bottom: 1px solid $white-text-color;
-    cursor: url(./images/vector.svg);
+    cursor: pointer;
+  }
+
+  &::placeholder,
+  &::placeholder {
+    @extend %transition;
+  }
+  &:hover::placeholder,
+  &:focus::placeholder {
+    @extend %transition;
+    color: $white-text-color;
   }
 }
 
@@ -114,6 +126,16 @@
 
   &:hover {
     border-bottom: 1px solid $white-text-color;
+    cursor: pointer;
+  }
+  &::placeholder,
+  &::placeholder {
+    @extend %transition;
+  }
+  &:hover::placeholder,
+  &:focus::placeholder {
+    @extend %transition;
+    color: $white-text-color;
   }
 }
 

@@ -331,7 +331,22 @@ summary {
   text-transform: uppercase;
 }
 
-.social-block-link, .site-nav-link, .recording-tel, .footer-social-link {
+.social-block-link, .site-nav-link, .recording-tel, .form-field::-webkit-input-placeholder, .form-field:hover::-webkit-input-placeholder, .form-field:focus::-webkit-input-placeholder, .form-textarea::-webkit-input-placeholder, .form-textarea:hover::-webkit-input-placeholder, .form-textarea:focus::-webkit-input-placeholder, .footer-social-link {
+  -webkit-transition: color 250ms cubic-bezier(0.42, 0, 1, 1) 250ms;
+  transition: color 250ms cubic-bezier(0.42, 0, 1, 1) 250ms;
+}
+
+.social-block-link, .site-nav-link, .recording-tel, .form-field:-ms-input-placeholder, .form-field:hover:-ms-input-placeholder, .form-field:focus:-ms-input-placeholder, .form-textarea:-ms-input-placeholder, .form-textarea:hover:-ms-input-placeholder, .form-textarea:focus:-ms-input-placeholder, .footer-social-link {
+  -webkit-transition: color 250ms cubic-bezier(0.42, 0, 1, 1) 250ms;
+  transition: color 250ms cubic-bezier(0.42, 0, 1, 1) 250ms;
+}
+
+.social-block-link, .site-nav-link, .recording-tel, .form-field::-ms-input-placeholder, .form-field:hover::-ms-input-placeholder, .form-field:focus::-ms-input-placeholder, .form-textarea::-ms-input-placeholder, .form-textarea:hover::-ms-input-placeholder, .form-textarea:focus::-ms-input-placeholder, .footer-social-link {
+  -webkit-transition: color 250ms cubic-bezier(0.42, 0, 1, 1) 250ms;
+  transition: color 250ms cubic-bezier(0.42, 0, 1, 1) 250ms;
+}
+
+.social-block-link, .site-nav-link, .recording-tel, .form-field::placeholder, .form-field:hover::placeholder, .form-field:focus::placeholder, .form-textarea::placeholder, .form-textarea:hover::placeholder, .form-textarea:focus::placeholder, .footer-social-link {
   -webkit-transition: color 250ms cubic-bezier(0.42, 0, 1, 1) 250ms;
   transition: color 250ms cubic-bezier(0.42, 0, 1, 1) 250ms;
 }
@@ -882,6 +897,8 @@ img {
   font-style: normal;
   font-size: 2em;
   color: #9da4bd;
+  -webkit-transition: color 250ms cubic-bezier(0.42, 0, 1, 1);
+  transition: color 250ms cubic-bezier(0.42, 0, 1, 1);
 }
 
 #myBtn:hover::after {
@@ -1017,6 +1034,7 @@ img {
   }
 }
 
+/* Кружочки */
 .section {
   padding-top: 84px;
   padding-bottom: 84px;
@@ -1715,6 +1733,8 @@ img {
   width: 100%;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  padding-bottom: 8px;
+  padding-top: 8px;
   background-color: transparent;
   color: rgba(157, 164, 189, 0.4);
   -webkit-transition: border-bottom 250ms cubic-bezier(0.42, 0, 1, 1) 250ms;
@@ -1739,7 +1759,23 @@ img {
 
 .form-field:hover, .form-field:focus {
   border-bottom: 1px solid #ffffff;
-  cursor: url(./images/vector.svg);
+  cursor: pointer;
+}
+
+.form-field:hover::-webkit-input-placeholder, .form-field:focus::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.form-field:hover:-ms-input-placeholder, .form-field:focus:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form-field:hover::-ms-input-placeholder, .form-field:focus::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form-field:hover::placeholder, .form-field:focus::placeholder {
+  color: #ffffff;
 }
 
 .form-textarea {
@@ -1771,6 +1807,23 @@ img {
 
 .form-textarea:hover {
   border-bottom: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.form-textarea:hover::-webkit-input-placeholder, .form-textarea:focus::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.form-textarea:hover:-ms-input-placeholder, .form-textarea:focus:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form-textarea:hover::-ms-input-placeholder, .form-textarea:focus::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form-textarea:hover::placeholder, .form-textarea:focus::placeholder {
+  color: #ffffff;
 }
 
 .contact-link {
